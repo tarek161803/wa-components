@@ -45,10 +45,13 @@ const Select = ({
 				/>
 			</ListboxButton>
 			<ListboxOptions
-				anchor="bottom"
+				anchor={{
+					gap: 8,
+					to: 'bottom',
+				}}
 				transition
 				className={cn(
-					'ctx-z-20 ctx-scrollbar ctx-mt-2 ctx-shadow-lg ctx-h-60 ctx-space-y-2 ctx-w-[var(--button-width)] ctx-rounded-lg ctx-border ctx-bg-white ctx-p-2 focus:ctx-outline-none',
+					'ctx-z-20 ctx-scrollbar [--anchor-gap:var(--spacing-1)] ctx-bg-white ctx-shadow-md  ctx-h-60 ctx-space-y-2 ctx-w-[var(--button-width)] ctx-rounded-lg ctx-border ctx-p-2 focus:ctx-outline-none',
 					'ctx-transition ctx-duration-100 ctx-ease-in data-[closed]:ctx-opacity-0'
 				)}
 			>
@@ -57,7 +60,7 @@ const Select = ({
 						key={item.name}
 						value={item}
 						className={cn(
-							'ctx-cursor-pointer ctx-bg-gray-100 ctx-border ctx-border-200 ctx-rounded-lg ctx-flex ctx-border-gray-200 ctx-transform ctx-duration-300 focus:ctx-border-primary data-[focus]:ctx-border-primary data-[focus]:ctx-bg-white ctx-items-center ctx-gap-2 ctx-py-[7px] ctx-px-3 ctx-select-none',
+							'ctx-cursor-pointer ctx-bg-gray-100 ctx-border ctx-rounded-lg ctx-flex ctx-border-gray-200 ctx-transform ctx-duration-300  data-[focus]:ctx-border-primary data-[focus]:ctx-bg-white ctx-items-center ctx-gap-2 ctx-py-[7px] ctx-px-3 ctx-select-none',
 							itemClass
 						)}
 					>
