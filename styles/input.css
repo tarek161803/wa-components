@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .ctx-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .ctx-scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #ffffff00;
+  }
+
+  .ctx-scrollbar::-webkit-scrollbar-thumb {
+    background: #cfcfcf;
+    border-radius: 100vh;
+  }
+
+  .ctx-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #b7b7b7;
+  }
+}
