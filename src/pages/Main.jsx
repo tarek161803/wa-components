@@ -1,12 +1,12 @@
-import React from "react";
-import Common from "./sections/Common/Common";
+import React from 'react';
+import Common from './sections/Common/Common';
 
 const Main = () => {
-  return (
-    <>
-      <Common />
-    </>
-  );
+	return (
+		<>
+			<Common />
+		</>
+	);
 };
 
 export default Main;

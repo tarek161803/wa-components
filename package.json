@@ -43,5 +43,31 @@
       "@babel/preset-env",
       "@babel/preset-react"
     ]
-  }
+  },
+  "browserslist": [
+    "extends @wordpress/browserslist-config"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "plugin:@wordpress/eslint-plugin/recommended",
+      "plugin:jsdoc/recommended"
+    ],
+    "env": {
+      "browser": true,
+      "es6": true,
+      "jquery": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "globals": {
+      "jQuery": true,
+      "$": true
+    }
+  },
+  "stylelint": {
+    "extends": [
+      "@wordpress/stylelint-config",
+      "@wordpress/stylelint-config/scss"
+    ]
+  },
+  "prettier": "@wordpress/prettier-config"
 }

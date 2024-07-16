@@ -1,10 +1,12 @@
-import { clsx } from "clsx";
-import { extendTailwindMerge } from "tailwind-merge";
+import { clsx } from 'clsx';
+import { extendTailwindMerge } from 'tailwind-merge';
 
 const twMerge = extendTailwindMerge({
-  prefix: "ctx-",
+	prefix: 'ctx-',
 });
 
-export default function cn(...inputs) {
-  return twMerge(clsx(inputs));
-}
+const cn = (...inputs) => {
+	return twMerge(clsx(inputs));
+};
+
+export default cn;

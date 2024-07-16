@@ -265,16 +265,32 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Select(_ref) {
-  var selected = _ref.selected,
+  var className = _ref.className,
+    itemClass = _ref.itemClass,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? "large" : _ref$size,
+    selected = _ref.selected,
     onChange = _ref.onChange,
-    items = _ref.items;
+    items = _ref.items,
+    _ref$placeholder = _ref.placeholder,
+    placeholder = _ref$placeholder === void 0 ? "Please Select" : _ref$placeholder;
+  var sizeClass = {
+    small: "ctx-text-xs ctx-py-2 ctx-shadow-custom-sm",
+    large: "ctx-text-sm ctx-py-2.5 ctx-shadow-custom"
+  };
+  var buttonIconClass = {
+    small: "ctx-top-1.5 ctx-right-1.5 ctx-size-5",
+    large: "ctx-top-2.5 ctx-right-2.5 ctx-size-5"
+  };
+  console.log("");
+  var hello = "";
   return /*#__PURE__*/React.createElement(_headlessui_react__WEBPACK_IMPORTED_MODULE_1__.Listbox, {
     value: selected,
     onChange: onChange
   }, /*#__PURE__*/React.createElement(_headlessui_react__WEBPACK_IMPORTED_MODULE_1__.ListboxButton, {
-    className: (0,_utils_cn__WEBPACK_IMPORTED_MODULE_0__["default"])("ctx-relative ctx-bg-white ctx-shadow-custom ctx-block ctx-w-full ctx-rounded-lg ctx-py-2.5 ctx-pr-8 ctx-pl-3 ctx-text-left ctx-text-sm ctx-font-semibold ctx-text-gray-700 focus-visible:ctx-outline-none")
-  }, selected.name, /*#__PURE__*/React.createElement(_heroicons_react_20_solid__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    className: "ctx-group ctx-pointer-events-none ctx-absolute ctx-top-2.5 ctx-right-2.5 ctx-size-5 ctx-fill-gray-700",
+    className: (0,_utils_cn__WEBPACK_IMPORTED_MODULE_0__["default"])("ctx-relative ctx-bg-white  ctx-block ctx-w-full ctx-rounded-lg  ctx-pr-8 ctx-pl-3 ctx-text-left ctx-font-semibold ctx-text-gray-700 focus-visible:ctx-outline-none", sizeClass[size], className)
+  }, selected ? selected.name : placeholder, /*#__PURE__*/React.createElement(_heroicons_react_20_solid__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    className: (0,_utils_cn__WEBPACK_IMPORTED_MODULE_0__["default"])("ctx-group ctx-pointer-events-none ctx-absolute ctx-fill-gray-700", buttonIconClass[size]),
     "aria-hidden": "true"
   })), /*#__PURE__*/React.createElement(_headlessui_react__WEBPACK_IMPORTED_MODULE_1__.ListboxOptions, {
     anchor: "bottom",
@@ -284,7 +300,7 @@ function Select(_ref) {
     return /*#__PURE__*/React.createElement(_headlessui_react__WEBPACK_IMPORTED_MODULE_1__.ListboxOption, {
       key: item.name,
       value: item,
-      className: "ctx-cursor-pointer ctx-bg-gray-100 ctx-border ctx-border-200 ctx-rounded-lg ctx-flex ctx-border-gray-200 ctx-transform ctx-duration-300 focus:ctx-border-primary data-[focus]:ctx-border-primary data-[focus]:ctx-bg-white ctx-items-center ctx-gap-2 ctx-py-[7px] ctx-px-3 ctx-select-none"
+      className: (0,_utils_cn__WEBPACK_IMPORTED_MODULE_0__["default"])("ctx-cursor-pointer ctx-bg-gray-100 ctx-border ctx-border-200 ctx-rounded-lg ctx-flex ctx-border-gray-200 ctx-transform ctx-duration-300 focus:ctx-border-primary data-[focus]:ctx-border-primary data-[focus]:ctx-bg-white ctx-items-center ctx-gap-2 ctx-py-[7px] ctx-px-3 ctx-select-none", itemClass)
     }, /*#__PURE__*/React.createElement("div", {
       className: "ctx-text-xs ctx-text-gray-900"
     }, item.name));
@@ -764,7 +780,7 @@ var people = [{
   name: "Devon Webb"
 }];
 var Selects = function Selects() {
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(people[1]),
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
     _useState2 = _slicedToArray(_useState, 2),
     selected = _useState2[0],
     setSelected = _useState2[1];
@@ -774,12 +790,21 @@ var Selects = function Selects() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ComponentContainer__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Selects"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "ctx-flex ctx-gap-10"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "ctx-w-72"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Select__WEBPACK_IMPORTED_MODULE_1__["default"], {
     items: people,
     selected: selected,
     onChange: handleChange
-  })));
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "ctx-w-72"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Select__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    size: "small",
+    items: people,
+    selected: selected,
+    onChange: handleChange
+  }))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Selects);
 
