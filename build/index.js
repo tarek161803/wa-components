@@ -50,7 +50,7 @@ const Button = ({
 }) => {
   const sizeClass = {
     small: 'ctx-px-1.5 ctx-py-[3px] ctx-text-[10px] ctx-rounded ctx-shadow-custom-sm',
-    medium: 'ctx-px-2.5 ctx-py-2.5 ctx-text-xs',
+    medium: 'ctx-p-2 ctx-text-xs',
     large: 'ctx-p-2.5 ctx-text-sm'
   };
   const typeClass = {
@@ -61,7 +61,7 @@ const Button = ({
   };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     disabled: disabled,
-    className: (0,_utils_cn__WEBPACK_IMPORTED_MODULE_1__["default"])('ctx-font-semibold ctx-rounded-lg ctx-shadow-custom ctx-flex ctx-items-center ctx-gap-1.5 ctx-font-sans ', sizeClass[size], typeClass[type], className),
+    className: (0,_utils_cn__WEBPACK_IMPORTED_MODULE_1__["default"])('ctx-font-semibold  ctx-rounded-lg ctx-shadow-custom ctx-flex ctx-items-center ctx-justify-center ctx-gap-1.5 ctx-font-sans ', sizeClass[size], typeClass[type], className),
     onClick: onClick
   }, icon && icon, " ", children);
 };
@@ -119,7 +119,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const DisclosureTab = ({
-  title = 'Disclosure Title  '
+  title = 'Disclosure Title',
+  children
 }) => {
   return /*#__PURE__*/React.createElement(_headlessui_react__WEBPACK_IMPORTED_MODULE_1__.Disclosure, null, /*#__PURE__*/React.createElement(_headlessui_react__WEBPACK_IMPORTED_MODULE_1__.DisclosureButton, {
     className: ({
@@ -132,10 +133,48 @@ const DisclosureTab = ({
       className: "ctx-size-4"
     })
   })), /*#__PURE__*/React.createElement(_headlessui_react__WEBPACK_IMPORTED_MODULE_1__.DisclosurePanel, {
-    className: "ctx-text-gray-500 ctx-bg-white"
-  }, "Yes! You can purchase a license that you can share with your entire team."));
+    className: " ctx-px-4 ctx-pb-2.5 ctx-bg-white ctx-rounded-b-lg"
+  }, children));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DisclosureTab);
+
+/***/ }),
+
+/***/ "./src/components/DocCard.jsx":
+/*!************************************!*\
+  !*** ./src/components/DocCard.jsx ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _utils_cn__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/cn */ "./src/utils/cn.js");
+
+
+const DocCard = ({
+  onClick,
+  title,
+  description,
+  thumbnail
+}) => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    onClick: onClick,
+    className: (0,_utils_cn__WEBPACK_IMPORTED_MODULE_1__["default"])('ctx-flex ctx-text-left ctx-items-center ctx-gap-3 ctx-py-2')
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: thumbnail,
+    alt: title,
+    className: (0,_utils_cn__WEBPACK_IMPORTED_MODULE_1__["default"])('ctx-w-[116px] ctx-h-[66px] ctx-object-cover ctx-flex-shrink-0 ctx-rounded-lg')
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "ctx-font-bold ctx-text-gray-900 ctx-text-xs"
+  }, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "ctx-text-gray-700 ctx-text-xs"
+  }, description.substr(0, 84), "...")));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DocCard);
 
 /***/ }),
 
@@ -159,6 +198,7 @@ const Input = ({
   placeholder = '',
   size = 'large',
   icon = '',
+  className = '',
   onChange = () => {}
 }) => {
   const sizeClass = {
@@ -166,14 +206,14 @@ const Input = ({
     small: 'ctx-text-xs !ctx-py-[3px]'
   };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "ctx-flex ctx-items-center ctx-shadow-gray-200 ctx-shadow-custom-sm ctx-rounded-lg"
+    className: "ctx-flex ctx-items-center  ctx-shadow-gray-200 ctx-shadow-custom-sm ctx-rounded-lg"
   }, icon && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "ctx-px-2 -ctx-mr-8 ctx-z-10"
   }, icon), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     onChange: onChange,
-    className: (0,_utils_cn__WEBPACK_IMPORTED_MODULE_1__["default"])('ctx-font-medium placeholder:ctx-text-gray-600 !ctx-border-gray-100 !ctx-rounded-lg !ctx-px-3  ctx-flex-grow focus:!ctx-border-primary focus-visible:!ctx-outline-none !ctx-shadow-none', sizeClass[size], {
+    className: (0,_utils_cn__WEBPACK_IMPORTED_MODULE_1__["default"])('ctx-font-medium  placeholder:ctx-text-gray-600  !ctx-border-gray-100 !ctx-rounded-lg !ctx-px-3  ctx-flex-grow focus:!ctx-border-primary focus-visible:!ctx-outline-none !ctx-shadow-none', sizeClass[size], {
       '!ctx-pl-7': icon
-    }),
+    }, className),
     type: type,
     placeholder: placeholder
   }));
@@ -675,21 +715,56 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _heroicons_react_24_solid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @heroicons/react/24/solid */ "./node_modules/@heroicons/react/24/solid/esm/MagnifyingGlassIcon.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_DisclosureTab__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../components/DisclosureTab */ "./src/components/DisclosureTab.jsx");
-/* harmony import */ var _components_ComponentContainer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../components/ComponentContainer */ "./src/pages/components/ComponentContainer.jsx");
+/* harmony import */ var _components_Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../components/Button */ "./src/components/Button.jsx");
+/* harmony import */ var _components_DisclosureTab__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../components/DisclosureTab */ "./src/components/DisclosureTab.jsx");
+/* harmony import */ var _components_DocCard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../components/DocCard */ "./src/components/DocCard.jsx");
+/* harmony import */ var _components_Input__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../../components/Input */ "./src/components/Input.jsx");
+/* harmony import */ var _components_ComponentContainer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../components/ComponentContainer */ "./src/pages/components/ComponentContainer.jsx");
 
 
 
+
+
+
+
+const posts = [{
+  id: 1,
+  title: 'How to Add Discount to Cart Programmatically in WooCommerce (Easy Steps)',
+  description: 'Discounts and coupons are the most powerful marketing tool for an online store. They can give you a 73% boost in your sales. Here are some awestriking stats on the impact of discounts – I hope this proves the might and power of discounts. WooCommerce is the best platform to build an online store and',
+  thumbnail: 'https://webappick.com/wp-content/uploads/2024/07/How-to-Add-Discount-to-Cart-Programmatically-in-WooCommerce-Easy-Guide_Blog-Featured-Image.png'
+}, {
+  id: 2,
+  title: 'How to Add Discount to Cart Programmatically in WooCommerce (Easy Steps)',
+  description: 'Discounts and coupons are the most powerful marketing tool for an online store. They can give you a 73% boost in your sales. Here are some awestriking stats on the impact of discounts – I hope this proves the might and power of discounts. WooCommerce is the best platform to build an online store and',
+  thumbnail: 'https://webappick.com/wp-content/uploads/2024/07/How-to-Add-Discount-to-Cart-Programmatically-in-WooCommerce-Easy-Guide_Blog-Featured-Image.png'
+}];
 const DisclosureTabs = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ComponentContainer__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ComponentContainer__WEBPACK_IMPORTED_MODULE_5__["default"], {
     title: "Disclosure Tabs"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "ctx-w-96"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_DisclosureTab__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    className: "ctx-w-[420px]"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_DisclosureTab__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Read Documentation"
-  })));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Input__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: "!ctx-bg-gray-50",
+    placeholder: "Search Documents",
+    icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_heroicons_react_24_solid__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      className: "ctx-size-4"
+    })
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "ctx-divide-y ctx-divide-gray-100 ctx-mt-1"
+  }, posts.map(post => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_DocCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    key: post.id,
+    title: post.title,
+    thumbnail: post.thumbnail,
+    description: post.description
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    type: "outline",
+    className: "ctx-w-full ctx-mt-2"
+  }, "Read More"))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DisclosureTabs);
 
@@ -10485,6 +10560,44 @@ function DocumentPlusIcon({
   }));
 }
 const ForwardRef = /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(DocumentPlusIcon);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ForwardRef);
+
+/***/ }),
+
+/***/ "./node_modules/@heroicons/react/24/solid/esm/MagnifyingGlassIcon.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@heroicons/react/24/solid/esm/MagnifyingGlassIcon.js ***!
+  \***************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+
+function MagnifyingGlassIcon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 24 24",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    fillRule: "evenodd",
+    d: "M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z",
+    clipRule: "evenodd"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(MagnifyingGlassIcon);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ForwardRef);
 
 /***/ }),

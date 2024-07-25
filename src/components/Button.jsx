@@ -12,7 +12,7 @@ const Button = ({
 }) => {
 	const sizeClass = {
 		small: 'ctx-px-1.5 ctx-py-[3px] ctx-text-[10px] ctx-rounded ctx-shadow-custom-sm',
-		medium: 'ctx-px-2.5 ctx-py-2.5 ctx-text-xs',
+		medium: 'ctx-p-2 ctx-text-xs',
 		large: 'ctx-p-2.5 ctx-text-sm',
 	};
 
@@ -29,7 +29,7 @@ const Button = ({
 		<button
 			disabled={disabled}
 			className={cn(
-				'ctx-font-semibold ctx-rounded-lg ctx-shadow-custom ctx-flex ctx-items-center ctx-gap-1.5 ctx-font-sans ',
+				'ctx-font-semibold  ctx-rounded-lg ctx-shadow-custom ctx-flex ctx-items-center ctx-justify-center ctx-gap-1.5 ctx-font-sans ',
 				sizeClass[size],
 				typeClass[type],
 				className

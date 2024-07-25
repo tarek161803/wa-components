@@ -6,7 +6,7 @@ import {
 import { ChevronDownIcon } from '@heroicons/react/24/solid';
 import Button from './Button';
 
-const DisclosureTab = ({ title = 'Disclosure Title  ' }) => {
+const DisclosureTab = ({ title = 'Disclosure Title', children }) => {
 	return (
 		<Disclosure>
 			<DisclosureButton
@@ -17,9 +17,8 @@ const DisclosureTab = ({ title = 'Disclosure Title  ' }) => {
 				<p className="ctx-font-semibold ctx-text-xl">{title}</p>
 				<Button icon={<ChevronDownIcon className="ctx-size-4" />} />
 			</DisclosureButton>
-			<DisclosurePanel className="ctx-text-gray-500 ctx-bg-white">
-				Yes! You can purchase a license that you can share with your
-				entire team.
+			<DisclosurePanel className=" ctx-px-4 ctx-pb-2.5 ctx-bg-white ctx-rounded-b-lg">
+				{children}
 			</DisclosurePanel>
 		</Disclosure>
 	);
