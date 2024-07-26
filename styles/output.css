@@ -1033,8 +1033,33 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.ctx-from-\[\#F39177\]{
+  --tw-gradient-from: #F39177 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(243 145 119 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.ctx-via-purple-500{
+  --tw-gradient-to: rgb(168 85 247 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #a855f7 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.ctx-via-\[\#A758EE\]{
+  --tw-gradient-to: rgb(167 88 238 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #A758EE var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.ctx-via-\[\#F61F48\]{
+  --tw-gradient-to: rgb(246 31 72 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #F61F48 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
 .ctx-to-primary-light{
   --tw-gradient-to: #12A1FF var(--tw-gradient-to-position);
+}
+
+.ctx-to-\[\#86C5FE\]{
+  --tw-gradient-to: #86C5FE var(--tw-gradient-to-position);
 }
 
 .ctx-fill-gray-700{
@@ -1325,6 +1350,18 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.ctx-shadow{
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.ctx-shadow-sm{
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .ctx-shadow-gray-200{
   --tw-shadow-color: #e5e7eb;
   --tw-shadow: var(--tw-shadow-colored);
@@ -1402,7 +1439,31 @@ video {
 }
 
 #tobBannerFree {
-  background-color: white;
+  background-image: url("../src/assets/svgs/mesh_gradient.svg");
+  background-position: 20% 50%;
+  animation: slide 5s infinite;
+}
+
+@keyframes slide {
+  0% {
+    background-position: 20% 50%;
+  }
+
+  40% {
+    background-position: 120% 50%;
+  }
+
+  60% {
+    background-position: 50% 50%;
+  }
+
+  80% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 20% 50%;
+  }
 }
 
 .placeholder\:ctx-text-gray-600::placeholder{

@@ -9,6 +9,7 @@ const Button = ({
 	type = 'primary',
 	icon = '',
 	disabled = false,
+	...props
 }) => {
 	const sizeClass = {
 		small: `${type === 'outline' || type === 'destructive-outline' ? 'ctx-px-[5px] ctx-py-0.5' : 'ctx-px-1.5 ctx-py-[3px]'}   ctx-text-[10px] ctx-rounded ctx-shadow-custom-sm`,
@@ -28,6 +29,7 @@ const Button = ({
 
 	return (
 		<button
+			{...props}
 			disabled={disabled}
 			className={cn(
 				'ctx-font-semibold ctx-rounded-lg ctx-shadow-custom ctx-flex ctx-items-center ctx-justify-center ctx-gap-1.5 ctx-font-sans ',

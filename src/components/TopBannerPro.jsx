@@ -15,7 +15,7 @@ const TopBannerPro = () => {
 				</p>
 			</div>
 			<div>
-				<Button size="large" type="outline">
+				<Button size="large" type="outline" className="ctx-px-4">
 					Learn More
 				</Button>
 			</div>

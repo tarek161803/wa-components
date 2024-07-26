@@ -181,6 +181,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _utils_cn__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/cn */ "./src/utils/cn.js");
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 
 
 const Button = ({
@@ -190,7 +191,8 @@ const Button = ({
   size = 'medium',
   type = 'primary',
   icon = '',
-  disabled = false
+  disabled = false,
+  ...props
 }) => {
   const sizeClass = {
     small: `${type === 'outline' || type === 'destructive-outline' ? 'ctx-px-[5px] ctx-py-0.5' : 'ctx-px-1.5 ctx-py-[3px]'}   ctx-text-[10px] ctx-rounded ctx-shadow-custom-sm`,
@@ -204,11 +206,11 @@ const Button = ({
     outline: 'ctx-bg-white ctx-border ctx-border-primary ctx-text-gray-800',
     'destructive-outline': 'ctx-border ctx-bg-white ctx-border-red-600 ctx-text-gray-800'
   };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", _extends({}, props, {
     disabled: disabled,
     className: (0,_utils_cn__WEBPACK_IMPORTED_MODULE_1__["default"])('ctx-font-semibold ctx-rounded-lg ctx-shadow-custom ctx-flex ctx-items-center ctx-justify-center ctx-gap-1.5 ctx-font-sans ', sizeClass[size], typeClass[type], className),
     onClick: onClick
-  }, icon && icon, " ", children);
+  }), icon && icon, " ", children);
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Button);
 
@@ -635,7 +637,7 @@ const TopBannerFree = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "ctx-flex ctx-items-center ctx-gap-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "ctx-border-2 ctx-border-white/15 ctx-p-1.5 ctx-rounded-lg ctx-bg-white/10"
+    className: "ctx-border-2 ctx-shadow-sm ctx-border-white/15 ctx-p-1.5 ctx-rounded-lg ctx-bg-white/10"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     src: _assets_svgs_ctx_feed_pro_svg__WEBPACK_IMPORTED_MODULE_1__["default"],
     alt: "CTX Feed Logo",
@@ -645,11 +647,14 @@ const TopBannerFree = () => {
   }, "Reach More, Sell More with CTX Feed Pro.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "ctx-flex ctx-gap-4"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    style: {
+      backgroundImage: 'linear-gradient(to right, #F39177 , #F61F48,#A758EE,#86C5FE)'
+    },
     size: "large",
-    className: "ctx-from-red-700"
+    className: "ctx-px-4"
   }, "Upgrade to PRO"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
     type: "custom",
-    className: "ctx-bg-white ctx-text-gray-900",
+    className: "ctx-bg-white ctx-text-gray-900 ctx-px-4",
     size: "large"
   }, "Learn More")));
 };
@@ -687,7 +692,8 @@ const TopBannerPro = () => {
     className: "ctx-font-semibold ctx-text-lg ctx-text-gray-900"
   }, "Have any questions? Feel free to contact us.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
     size: "large",
-    type: "outline"
+    type: "outline",
+    className: "ctx-px-4"
   }, "Learn More")));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TopBannerPro);
