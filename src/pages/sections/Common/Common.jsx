@@ -8,10 +8,12 @@ import RadioInputs from './components/RadioInputs/RadioInputs';
 import Selects from './components/Selects/Selects';
 import ToggleButtons from './components/ToggleButtons/ToggleButtons';
 import ToggleSwitches from './components/ToggleSwitches/ToggleSwitches';
+import TopBanners from './components/TopBanners/TopBanners';
 
 const Common = () => {
 	return (
 		<div className="ctx-mt-4 ctx-font-sans ctx-space-y-8 ctx-mr-4">
+			<TopBanners />
 			<DisclosureTabs />
 			<ToggleButtons />
 			<ToggleSwitches />

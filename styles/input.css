@@ -5,21 +5,25 @@
 @tailwind utilities;
 
 @layer utilities {
-  .ctx-scrollbar::-webkit-scrollbar {
-    width: 8px;
-  }
+	.ctx-scrollbar::-webkit-scrollbar {
+		width: 8px;
+	}
 
-  .ctx-scrollbar::-webkit-scrollbar-track {
-    border-radius: 100vh;
-    background: #ffffff00;
-  }
+	.ctx-scrollbar::-webkit-scrollbar-track {
+		border-radius: 100vh;
+		background: #ffffff00;
+	}
 
-  .ctx-scrollbar::-webkit-scrollbar-thumb {
-    background: #cfcfcf;
-    border-radius: 100vh;
-  }
+	.ctx-scrollbar::-webkit-scrollbar-thumb {
+		background: #cfcfcf;
+		border-radius: 100vh;
+	}
 
-  .ctx-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #b7b7b7;
-  }
+	.ctx-scrollbar::-webkit-scrollbar-thumb:hover {
+		background: #b7b7b7;
+	}
+}
+
+#tobBannerFree {
+	background-color: white;
 }
