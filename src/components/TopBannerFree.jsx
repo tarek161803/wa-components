@@ -15,7 +15,7 @@ const TopBannerFree = () => {
 						className="ctx-h-8"
 					/>
 				</div>
-				<p className="ctx-font-semibold ctx-text-3xl ctx-text-white ctx-drop-shadow">
+				<p className="ctx-font-semibold ctx-text-3xl ctx-text-white ctx-drop-shadow-md">
 					Reach More, Sell More with CTX Feed Pro.
 				</p>
 			</div>

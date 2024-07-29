@@ -27,15 +27,15 @@
 #tobBannerFree {
 	background-image: url("../src/assets/svgs/mesh_gradient.svg");
 	background-position: 20% 50%;
-	animation: slide 5s infinite;
+	animation: slide 7s infinite;
 }
 
 @keyframes slide {
 	0% {
-		background-position: 20% 50%;
+		background-position: 40% 50%;
 	}
 	40% {
-		background-position: 120% 50%;
+		background-position: 100% 50%;
 	}
 	60% {
 		background-position: 50% 50%;
@@ -44,6 +44,6 @@
 		background-position: 100% 50%;
 	}
 	100% {
-		background-position: 20% 50%;
+		background-position: 40% 50%;
 	}
 }
