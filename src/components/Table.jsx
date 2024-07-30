@@ -25,7 +25,7 @@ const TableBody = ({ children }) => {
 	);
 };
 
-const TableRow = ({ children, className }) => {
+const TableRow = ({ children, className = '' }) => {
 	return (
 		<tr
 			className={cn('even:ctx-bg-gray-100 odd:ctx-bg-gray-50', className)}
@@ -35,7 +35,7 @@ const TableRow = ({ children, className }) => {
 	);
 };
 
-const TableCell = ({ children, className }) => {
+const TableCell = ({ children, className = '' }) => {
 	return (
 		<td className={cn('ctx-p-3 ctx-text-sm ctx-text-gray-700', className)}>
 			{children}

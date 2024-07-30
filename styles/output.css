@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
+@font-face {
+  font-family: Spaceport;
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url(../src/assets//fonts/Spaceport_2006.otf) format("opentype");
+}
+
 /*
 ! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
 */
@@ -559,6 +571,10 @@ video {
   position: relative;
 }
 
+.-ctx-inset-px{
+  inset: -1px;
+}
+
 .ctx-left-0{
   left: 0px;
 }
@@ -744,6 +760,10 @@ video {
 
 .ctx-w-3\.5{
   width: 0.875rem;
+}
+
+.ctx-w-64{
+  width: 16rem;
 }
 
 .ctx-w-72{
@@ -1000,6 +1020,11 @@ video {
   border-color: rgb(220 38 38 / var(--tw-border-opacity));
 }
 
+.ctx-border-success{
+  --tw-border-opacity: 1;
+  border-color: rgb(16 185 129 / var(--tw-border-opacity));
+}
+
 .ctx-border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -1043,9 +1068,9 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
-.ctx-bg-gray-400{
+.ctx-bg-gray-200{
   --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .ctx-bg-primary{
@@ -1056,6 +1081,11 @@ video {
 .ctx-bg-red-600{
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
+.ctx-bg-success{
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 185 129 / var(--tw-bg-opacity));
 }
 
 .ctx-bg-white{
@@ -1265,8 +1295,16 @@ video {
   text-align: center;
 }
 
+.ctx-align-middle{
+  vertical-align: middle;
+}
+
 .ctx-font-sans{
   font-family: Urbanist, sans-serif;
+}
+
+.ctx-font-spaceport{
+  font-family: Spaceport, sans-serif;
 }
 
 .ctx-text-3xl{
@@ -1319,6 +1357,11 @@ video {
   text-transform: capitalize;
 }
 
+.ctx-text-\[\#EA580C\]{
+  --tw-text-opacity: 1;
+  color: rgb(234 88 12 / var(--tw-text-opacity));
+}
+
 .ctx-text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1359,6 +1402,14 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.ctx-opacity-0{
+  opacity: 0;
+}
+
+.ctx-opacity-100{
+  opacity: 1;
+}
+
 .\!ctx-shadow-none{
   --tw-shadow: 0 0 #0000 !important;
   --tw-shadow-colored: 0 0 #0000 !important;
@@ -1395,9 +1446,20 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.ctx-shadow{
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .ctx-shadow-gray-200{
   --tw-shadow-color: #e5e7eb;
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+.ctx-outline-none{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .ctx-ring-0{
@@ -1439,6 +1501,10 @@ video {
 
 .ctx-duration-300{
   transition-duration: 300ms;
+}
+
+.ctx-duration-700{
+  transition-duration: 700ms;
 }
 
 .ctx-ease-in{
@@ -1539,6 +1605,16 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
+.hover\:ctx-border-primary:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 153 255 / var(--tw-border-opacity));
+}
+
+.hover\:ctx-bg-white:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .focus\:\!ctx-border-primary:focus{
   --tw-border-opacity: 1 !important;
   border-color: rgb(0 153 255 / var(--tw-border-opacity)) !important;
@@ -1557,6 +1633,11 @@ video {
 .focus-visible\:ctx-outline-none:focus-visible{
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.ctx-group:hover .group-hover\:ctx-text-primary{
+  --tw-text-opacity: 1;
+  color: rgb(0 153 255 / var(--tw-text-opacity));
 }
 
 .data-\[selected\]\:ctx-border[data-selected]{

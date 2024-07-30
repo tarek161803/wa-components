@@ -4,12 +4,16 @@ export default {
 	theme: {
 		fontFamily: {
 			sans: ['Urbanist', 'sans-serif'],
+			spaceport: ['Spaceport', 'sans-serif'],
 		},
 		extend: {
 			colors: {
 				primary: {
 					DEFAULT: '#0099FF',
 					light: '#12A1FF',
+				},
+				success: {
+					DEFAULT: '#10B981',
 				},
 			},
 			boxShadow: {

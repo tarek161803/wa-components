@@ -5,7 +5,7 @@ const ToggleSwitch = ({ checked, onChange }) => {
 		<Switch
 			checked={checked}
 			onChange={onChange}
-			className="ctx-group ctx-bg-gray-400 ctx-relative ctx-flex ctx-h-5 ctx-w-8 ctx-cursor-pointer ctx-rounded-full  ctx-p-1 ctx-transition-colors ctx-duration-200 ctx-ease-in-out focus:ctx-outline-none data-[focus]:ctx-outline-1 data-[focus]:ctx-outline-white data-[checked]:ctx-bg-primary"
+			className="ctx-group ctx-bg-gray-200 ctx-relative ctx-flex ctx-h-5 ctx-w-8 ctx-cursor-pointer ctx-rounded-full  ctx-p-1 ctx-transition-colors ctx-duration-200 ctx-ease-in-out focus:ctx-outline-none data-[focus]:ctx-outline-1 data-[focus]:ctx-outline-white data-[checked]:ctx-bg-primary"
 		>
 			<span
 				aria-hidden="true"
