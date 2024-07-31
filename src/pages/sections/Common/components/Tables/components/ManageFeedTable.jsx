@@ -64,7 +64,7 @@ const ManageFeedTable = () => {
 					<Table.Cell>
 						<Checkbox />
 					</Table.Cell>
-					<Table.Cell className="ctx-text-center">
+					<Table.Cell className="ctx-text-center ctx-py-3.5">
 						Auto Update
 					</Table.Cell>
 					<Table.Cell>Feed Name</Table.Cell>
@@ -89,14 +89,18 @@ const ManageFeedTable = () => {
 								<ToggleSwitch />
 							</span>
 						</Table.Cell>
-						<Table.Cell>{row.feedName}</Table.Cell>
-						<Table.Cell className="ctx-flex ctx-items-center ctx-gap-3">
-							<img
-								className="ctx-size-4"
-								src={row.channel_icon}
-								alt={row.channel}
-							/>
-							{row.channel}
+						<Table.Cell className="ctx-py-3.5">
+							{row.feedName}
+						</Table.Cell>
+						<Table.Cell>
+							<span className="ctx-flex ctx-items-center ctx-gap-3">
+								<img
+									className="ctx-size-4"
+									src={row.channel_icon}
+									alt={row.channel}
+								/>
+								{row.channel}
+							</span>
 						</Table.Cell>
 						<Table.Cell className="ctx-text-center ctx-font-spaceport ctx-text-xs ctx-text-[#EA580C]">
 							{row.fileType}

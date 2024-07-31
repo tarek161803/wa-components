@@ -5,6 +5,7 @@ import DisclosureTabs from './components/DisclosureTabs/DisclosureTabs';
 import Inputs from './components/Inputs/Inputs';
 import LinkButtons from './components/LinkButtons/LinkButtons';
 import RadioInputs from './components/RadioInputs/RadioInputs';
+import SearchSelects from './components/SearchSelects/SearchSelects';
 import Selects from './components/Selects/Selects';
 import Tables from './components/Tables/Tables';
 import TabsComponent from './components/TabsComponent/TabsComponent';
@@ -22,6 +23,7 @@ const Common = () => {
 			<ToggleButtons />
 			<ToggleSwitches />
 			<Checkboxes />
+			<SearchSelects />
 			<Selects />
 			<Inputs />
 			<RadioInputs />
