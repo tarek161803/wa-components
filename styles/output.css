@@ -660,6 +660,10 @@ video {
   margin-bottom: 0.25rem;
 }
 
+.ctx-mb-6{
+  margin-bottom: 1.5rem;
+}
+
 .ctx-mr-4{
   margin-right: 1rem;
 }
@@ -678,10 +682,6 @@ video {
 
 .ctx-mt-6{
   margin-top: 1.5rem;
-}
-
-.ctx-mb-6{
-  margin-bottom: 1.5rem;
 }
 
 .ctx-block{
@@ -781,6 +781,14 @@ video {
 
 .ctx-h-screen{
   height: 100vh;
+}
+
+.ctx-h-\[5000px\]{
+  height: 5000px;
+}
+
+.ctx-h-44{
+  height: 11rem;
 }
 
 .\!ctx-max-h-60{
@@ -1042,14 +1050,14 @@ video {
   border-bottom-left-radius: 0.75rem;
 }
 
-.ctx-rounded-t-xl{
-  border-top-left-radius: 0.75rem;
-  border-top-right-radius: 0.75rem;
-}
-
 .ctx-rounded-t-2xl{
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
+}
+
+.ctx-rounded-t-xl{
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
 }
 
 .ctx-border{
@@ -1062,6 +1070,10 @@ video {
 
 .ctx-border-l-0{
   border-left-width: 0px;
+}
+
+.ctx-border-b{
+  border-bottom-width: 1px;
 }
 
 .\!ctx-border-none{
@@ -1156,8 +1168,8 @@ video {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
-.ctx-bg-gray-800\/20{
-  background-color: rgb(31 41 55 / 0.2);
+.ctx-bg-gray-800\/30{
+  background-color: rgb(31 41 55 / 0.3);
 }
 
 .ctx-bg-primary{
@@ -1184,8 +1196,9 @@ video {
   background-color: rgb(255 255 255 / 0.1);
 }
 
-.ctx-bg-gray-800\/30{
-  background-color: rgb(31 41 55 / 0.3);
+.ctx-bg-gray-50{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
 .ctx-bg-gradient-to-br{
@@ -1254,6 +1267,10 @@ video {
   padding: 9px;
 }
 
+.ctx-p-6{
+  padding: 1.5rem;
+}
+
 .\!ctx-px-2{
   padding-left: 0.5rem !important;
   padding-right: 0.5rem !important;
@@ -1309,6 +1326,16 @@ video {
   padding-right: 1rem;
 }
 
+.ctx-px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.ctx-px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .ctx-px-\[5px\]{
   padding-left: 5px;
   padding-right: 5px;
@@ -1354,6 +1381,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.ctx-py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .ctx-py-\[18px\]{
   padding-top: 18px;
   padding-bottom: 18px;
@@ -1372,16 +1404,6 @@ video {
 .ctx-py-\[7px\]{
   padding-top: 7px;
   padding-bottom: 7px;
-}
-
-.ctx-px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.ctx-py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .\!ctx-pl-2{
@@ -1472,6 +1494,11 @@ video {
 .\!ctx-text-xs{
   font-size: 0.75rem !important;
   line-height: 1rem !important;
+}
+
+.ctx-text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .ctx-text-3xl{

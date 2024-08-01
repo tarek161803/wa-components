@@ -71,7 +71,7 @@ const buttons = [
 ];
 
 const MakeFeedTable = () => {
-	const [deleteModalOpen, setDeleteModalOpen] = useState(true);
+	const [deleteModalOpen, setDeleteModalOpen] = useState(false);
 	const [reOrderCampaigns, setReOrderCampaigns] = useState(data);
 	const handleDragEnd = (result) => {
 		const items = Array.from(reOrderCampaigns);
