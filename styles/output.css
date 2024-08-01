@@ -664,6 +664,10 @@ video {
   margin-bottom: 0.25rem;
 }
 
+.ctx-mb-5{
+  margin-bottom: 1.25rem;
+}
+
 .ctx-mb-6{
   margin-bottom: 1.5rem;
 }
@@ -678,6 +682,10 @@ video {
 
 .ctx-mt-2{
   margin-top: 0.5rem;
+}
+
+.ctx-mt-3{
+  margin-top: 0.75rem;
 }
 
 .ctx-mt-4{
@@ -775,6 +783,10 @@ video {
   height: 0.875rem;
 }
 
+.ctx-h-4{
+  height: 1rem;
+}
+
 .ctx-h-44{
   height: 11rem;
 }
@@ -787,8 +799,16 @@ video {
   height: 2rem;
 }
 
+.ctx-h-\[22px\]{
+  height: 22px;
+}
+
 .ctx-h-\[230px\]{
   height: 230px;
+}
+
+.ctx-h-\[30px\]{
+  height: 30px;
 }
 
 .ctx-h-\[66px\]{
@@ -801,6 +821,14 @@ video {
 
 .\!ctx-max-h-60{
   max-height: 15rem !important;
+}
+
+.ctx-w-14{
+  width: 3.5rem;
+}
+
+.ctx-w-24{
+  width: 6rem;
 }
 
 .ctx-w-3{
@@ -839,6 +867,10 @@ video {
   width: 2rem;
 }
 
+.ctx-w-96{
+  width: 24rem;
+}
+
 .ctx-w-\[116px\]{
   width: 116px;
 }
@@ -855,6 +887,10 @@ video {
   width: 440px;
 }
 
+.ctx-w-\[486px\]{
+  width: 486px;
+}
+
 .ctx-w-\[920px\]{
   width: 920px;
 }
@@ -865,10 +901,6 @@ video {
 
 .ctx-w-screen{
   width: 100vw;
-}
-
-.ctx-w-\[486px\]{
-  width: 486px;
 }
 
 .ctx-min-w-\[var\(--button-width\)\]{
@@ -902,6 +934,16 @@ video {
 
 .ctx-transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes ctx-spin{
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.ctx-animate-spin{
+  animation: ctx-spin 1s linear infinite;
 }
 
 .ctx-cursor-grab{
@@ -1094,6 +1136,10 @@ video {
   border-width: 2px;
 }
 
+.ctx-border-\[3px\]{
+  border-width: 3px;
+}
+
 .ctx-border-b{
   border-bottom-width: 1px;
 }
@@ -1157,6 +1203,11 @@ video {
 
 .ctx-border-r-transparent{
   border-right-color: transparent;
+}
+
+.ctx-border-t-primary{
+  --tw-border-opacity: 1;
+  border-top-color: rgb(0 153 255 / var(--tw-border-opacity));
 }
 
 .\!ctx-bg-gray-100{
@@ -1255,6 +1306,14 @@ video {
 
 .ctx-object-cover{
   object-fit: cover;
+}
+
+.ctx-p-0{
+  padding: 0px;
+}
+
+.ctx-p-0\.5{
+  padding: 0.125rem;
 }
 
 .ctx-p-1{
@@ -1398,6 +1457,11 @@ video {
 .ctx-py-2\.5{
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
+}
+
+.ctx-py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .ctx-py-3{
@@ -1805,6 +1869,28 @@ video {
 
   100% {
     background-position: 40% 50%;
+  }
+}
+
+.color-progress {
+  background: linear-gradient(
+		90deg,
+		#fff20f 0%,
+		#01fffd 33.33%,
+		#d42bff 66.66%,
+		#fff20f 100%
+	);
+  background-size: 200%;
+  animation: moveGradient 5s linear infinite;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  100% {
+    background-position: -200% 0%;
   }
 }
 

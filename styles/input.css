@@ -55,3 +55,24 @@
 		background-position: 40% 50%;
 	}
 }
+
+.color-progress {
+	background: linear-gradient(
+		90deg,
+		#fff20f 0%,
+		#01fffd 33.33%,
+		#d42bff 66.66%,
+		#fff20f 100%
+	);
+	background-size: 200%;
+	animation: moveGradient 5s linear infinite;
+}
+
+@keyframes moveGradient {
+	0% {
+		background-position: 0% 0%;
+	}
+	100% {
+		background-position: -200% 0%;
+	}
+}
