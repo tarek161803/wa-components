@@ -7,6 +7,7 @@ import Checkboxes from './components/Checkboxes/Checkboxes';
 import DisclosureTabs from './components/DisclosureTabs/DisclosureTabs';
 import Inputs from './components/Inputs/Inputs';
 import LinkButtons from './components/LinkButtons/LinkButtons';
+import NoItems from './components/NoItems/NoItems';
 import RadioInputs from './components/RadioInputs/RadioInputs';
 import SearchSelects from './components/SearchSelects/SearchSelects';
 import Selects from './components/Selects/Selects';
@@ -19,6 +20,7 @@ import TopBanners from './components/TopBanners/TopBanners';
 const Common = () => {
 	return (
 		<div className="ctx-mt-4 ctx-font-sans ctx-space-y-8 ctx-mr-4">
+			<NoItems />
 			<MainContainer
 				title="Manage Feed"
 				rightContent={
