@@ -5,7 +5,7 @@ const Button = ({
 	onClick = () => {},
 	children = '',
 	className = '',
-	size = 'medium',
+	size = 'large',
 	type = 'primary',
 	icon = '',
 	disabled = false,

@@ -2,6 +2,7 @@ import { DocumentPlusIcon } from '@heroicons/react/24/solid';
 import React from 'react';
 import Button from '../../../components/Button';
 import MainContainer from '../../../components/MainContainer';
+import ChatBoxes from './ChatBoxes/ChatBoxes';
 import Buttons from './components/Buttons/Buttons';
 import Checkboxes from './components/Checkboxes/Checkboxes';
 import DisclosureTabs from './components/DisclosureTabs/DisclosureTabs';
@@ -20,6 +21,7 @@ import TopBanners from './components/TopBanners/TopBanners';
 const Common = () => {
 	return (
 		<div className="ctx-mt-4 ctx-font-sans ctx-space-y-8 ctx-mr-4">
+			<ChatBoxes />
 			<NoItems />
 			<MainContainer
 				title="Manage Feed"

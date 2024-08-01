@@ -656,6 +656,10 @@ video {
   margin-right: -2rem;
 }
 
+.-ctx-mt-1{
+  margin-top: -0.25rem;
+}
+
 .ctx-mb-1{
   margin-bottom: 0.25rem;
 }
@@ -682,14 +686,6 @@ video {
 
 .ctx-mt-6{
   margin-top: 1.5rem;
-}
-
-.-ctx-mt-1{
-  margin-top: -0.25rem;
-}
-
-.-ctx-mt-6{
-  margin-top: -1.5rem;
 }
 
 .ctx-block{
@@ -791,20 +787,16 @@ video {
   height: 2rem;
 }
 
+.ctx-h-\[230px\]{
+  height: 230px;
+}
+
 .ctx-h-\[66px\]{
   height: 66px;
 }
 
 .ctx-h-screen{
   height: 100vh;
-}
-
-.ctx-h-\[244px\]{
-  height: 244px;
-}
-
-.ctx-h-\[230px\]{
-  height: 230px;
 }
 
 .\!ctx-max-h-60{
@@ -863,8 +855,8 @@ video {
   width: 440px;
 }
 
-.ctx-w-\[840px\]{
-  width: 840px;
+.ctx-w-\[920px\]{
+  width: 920px;
 }
 
 .ctx-w-full{
@@ -875,16 +867,8 @@ video {
   width: 100vw;
 }
 
-.ctx-w-\[960px\]{
-  width: 960px;
-}
-
-.ctx-w-\[900px\]{
-  width: 900px;
-}
-
-.ctx-w-\[920px\]{
-  width: 920px;
+.ctx-w-\[486px\]{
+  width: 486px;
 }
 
 .ctx-min-w-\[var\(--button-width\)\]{
@@ -1013,16 +997,16 @@ video {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-.ctx-space-y-8 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
-}
-
 .ctx-space-y-6 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.ctx-space-y-8 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
 .ctx-divide-y > :not([hidden]) ~ :not([hidden]){
@@ -1243,10 +1227,6 @@ video {
   background-color: rgb(255 255 255 / 0.1);
 }
 
-.ctx-bg-primary\/20{
-  background-color: rgb(0 153 255 / 0.2);
-}
-
 .ctx-bg-gradient-to-br{
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
@@ -1285,6 +1265,14 @@ video {
   padding: 0.375rem;
 }
 
+.ctx-p-11{
+  padding: 2.75rem;
+}
+
+.ctx-p-16{
+  padding: 4rem;
+}
+
 .ctx-p-2{
   padding: 0.5rem;
 }
@@ -1315,14 +1303,6 @@ video {
 
 .ctx-p-\[9px\]{
   padding: 9px;
-}
-
-.ctx-p-11{
-  padding: 2.75rem;
-}
-
-.ctx-p-16{
-  padding: 4rem;
 }
 
 .\!ctx-px-2{
