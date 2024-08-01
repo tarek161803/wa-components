@@ -680,6 +680,10 @@ video {
   margin-top: 1.5rem;
 }
 
+.ctx-mb-6{
+  margin-bottom: 1.5rem;
+}
+
 .ctx-block{
   display: block;
 }
@@ -1043,6 +1047,11 @@ video {
   border-top-right-radius: 0.75rem;
 }
 
+.ctx-rounded-t-2xl{
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
 .ctx-border{
   border-width: 1px;
 }
@@ -1173,6 +1182,10 @@ video {
 
 .ctx-bg-white\/10{
   background-color: rgb(255 255 255 / 0.1);
+}
+
+.ctx-bg-gray-800\/30{
+  background-color: rgb(31 41 55 / 0.3);
 }
 
 .ctx-bg-gradient-to-br{
@@ -1359,6 +1372,16 @@ video {
 .ctx-py-\[7px\]{
   padding-top: 7px;
   padding-bottom: 7px;
+}
+
+.ctx-px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.ctx-py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .\!ctx-pl-2{
@@ -1797,12 +1820,6 @@ video {
 .focus\:\!ctx-shadow-custom-sm:focus{
   --tw-shadow: 1px 1px 0px 1px rgba(107, 114, 128, 0.30) !important;
   --tw-shadow-colored: 1px 1px 0px 1px var(--tw-shadow-color) !important;
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
-}
-
-.focus\:\!ctx-shadow-none:focus{
-  --tw-shadow: 0 0 #0000 !important;
-  --tw-shadow-colored: 0 0 #0000 !important;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
 }
 

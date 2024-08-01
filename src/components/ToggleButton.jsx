@@ -3,7 +3,7 @@ import cn from '../utils/cn';
 
 const ToggleButton = ({ buttons, active, onChange }) => {
 	return (
-		<div className="ctx-flex ctx-shadow-custom ctx-rounded-lg">
+		<div className="ctx-flex ctx-shadow-custom-sm ctx-rounded-lg">
 			{buttons.map((button, index) => (
 				<button
 					onClick={() => onChange(button)}
