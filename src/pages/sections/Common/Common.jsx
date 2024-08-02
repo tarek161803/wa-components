@@ -1,7 +1,11 @@
-import { DocumentPlusIcon } from '@heroicons/react/24/solid';
-import React from 'react';
+import {
+	ArrowDownOnSquareIcon,
+	DocumentPlusIcon,
+} from '@heroicons/react/24/solid';
+import React, { useState } from 'react';
 import Button from '../../../components/Button';
 import MainContainer from '../../../components/MainContainer';
+import ImportModal from '../../../components/ManageFeed/ImportModal';
 import ChatBoxes from './ChatBoxes/ChatBoxes';
 import Buttons from './components/Buttons/Buttons';
 import Checkboxes from './components/Checkboxes/Checkboxes';
@@ -20,6 +24,12 @@ import TopBanners from './components/TopBanners/TopBanners';
 import GeneratingFeeds from './GeneratingFeeds/GeneratingFeeds';
 
 const Common = () => {
+	const [importModalOpen, setImportModalOpen] = useState(true);
+
+	const handleImportModal = () => {
+		setImportModalOpen(true);
+	};
+
 	return (
 		<div className="ctx-mt-4 ctx-font-sans ctx-space-y-8 ctx-mr-4">
 			<GeneratingFeeds />
@@ -28,14 +38,25 @@ const Common = () => {
 			<MainContainer
 				title="Manage Feed"
 				rightContent={
-					<Button
-						icon={
-							<DocumentPlusIcon className="ctx-size-4 ctx-text-white" />
-						}
-						size="large"
-					>
-						Make Feed
-					</Button>
+					<div className="ctx-flex ctx-gap-3">
+						<Button
+							onClick={handleImportModal}
+							icon={
+								<ArrowDownOnSquareIcon className="ctx-size-4 ctx-text-white" />
+							}
+							size="large"
+						>
+							Import
+						</Button>
+						<Button
+							icon={
+								<DocumentPlusIcon className="ctx-size-4 ctx-text-white" />
+							}
+							size="large"
+						>
+							Make Feed
+						</Button>
+					</div>
 				}
 			>
 				<div className="ctx-h-44">Page Content</div>
@@ -53,6 +74,11 @@ const Common = () => {
 			<RadioInputs />
 			<Buttons />
 			<LinkButtons />
+
+			<ImportModal
+				isOpen={importModalOpen}
+				setIsOpen={setImportModalOpen}
+			/>
 		</div>
 	);
 };

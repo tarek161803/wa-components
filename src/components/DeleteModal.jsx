@@ -20,7 +20,7 @@ const DeleteModal = ({ isOpen, setIsOpen }) => {
 				}}
 				transition
 				id="delete-backdrop"
-				className="ctx-h-screen ctx-w-screen ctx-flex ctx-justify-center ctx-items-center ctx-bg-gray-800/30 ctx-duration-300 ctx-ease-out data-[closed]:ctx-transform-[scale(95%)] data-[closed]:ctx-opacity-0"
+				className="ctx-h-screen ctx-font-sans ctx-w-screen ctx-flex ctx-justify-center ctx-items-center ctx-bg-gray-800/30 ctx-duration-300 ctx-ease-out data-[closed]:ctx-transform-[scale(95%)] data-[closed]:ctx-opacity-0"
 			>
 				<div className="ctx-w-[440px] ctx-bg-gray-100  ctx-rounded-2xl">
 					<div className="ctx-bg-white ctx-rounded-t-2xl ctx-p-8 ctx-flex ctx-flex-col ctx-items-center">

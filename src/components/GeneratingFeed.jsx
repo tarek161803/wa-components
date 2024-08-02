@@ -42,7 +42,7 @@ const GeneratingFeed = () => {
 				<div className="ctx-flex ctx-items-center ctx-gap-2">
 					<div className="ctx-size-5 ctx-rounded-full ctx-border-[3px]" />
 					<p className="ctx-text-base ctx-text-gray-800">
-						Saving Feed Configuration
+						Fetching ID
 					</p>
 				</div>
 				<div className="ctx-flex ctx-items-center ctx-gap-2">

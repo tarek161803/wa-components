@@ -5,7 +5,7 @@ const TopBannerFree = () => {
 	return (
 		<div
 			id="tobBannerFree"
-			className="ctx-bg-white ctx-flex ctx-justify-between ctx-items-center ctx-rounded-lg ctx-p-2"
+			className="ctx-bg-white ctx-flex ctx-justify-between ctx-items-center ctx-rounded-lg ctx-px-3 ctx-py-2"
 		>
 			<div className="ctx-flex ctx-items-center ctx-gap-6">
 				<div className="ctx-border-2 ctx-shadow-sm ctx-border-white/15 ctx-p-1.5 ctx-rounded-lg ctx-bg-white/10">
