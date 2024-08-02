@@ -24,7 +24,7 @@ import TopBanners from './components/TopBanners/TopBanners';
 import GeneratingFeeds from './GeneratingFeeds/GeneratingFeeds';
 
 const Common = () => {
-	const [importModalOpen, setImportModalOpen] = useState(true);
+	const [importModalOpen, setImportModalOpen] = useState(false);
 
 	const handleImportModal = () => {
 		setImportModalOpen(true);
