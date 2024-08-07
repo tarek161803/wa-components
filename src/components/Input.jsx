@@ -2,6 +2,7 @@ import React from 'react';
 import cn from '../utils/cn';
 
 const Input = ({
+	id = '',
 	type = 'text',
 	placeholder = '',
 	size = 'large',
@@ -21,6 +22,7 @@ const Input = ({
 				<span className="ctx-px-2 -ctx-mr-8 ctx-z-10">{icon}</span>
 			)}
 			<input
+				id={id}
 				value={value}
 				onChange={onChange}
 				className={cn(

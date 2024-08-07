@@ -9,6 +9,7 @@ import ImportModal from '../../../components/ManageFeed/ImportModal';
 import ChatBoxes from './ChatBoxes/ChatBoxes';
 import Buttons from './components/Buttons/Buttons';
 import Checkboxes from './components/Checkboxes/Checkboxes';
+import CreateModals from './components/CreateModals/CreateModals';
 import DisclosureTabs from './components/DisclosureTabs/DisclosureTabs';
 import Inputs from './components/Inputs/Inputs';
 import LinkButtons from './components/LinkButtons/LinkButtons';
@@ -32,6 +33,7 @@ const Common = () => {
 
 	return (
 		<div className="ctx-mt-4 ctx-font-sans ctx-space-y-8 ctx-mr-4">
+			<CreateModals />
 			<GeneratingFeeds />
 			<ChatBoxes />
 			<NoItems />

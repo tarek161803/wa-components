@@ -23,9 +23,14 @@ const people = [
 	{ id: 10, name: 'Devon Webb' },
 ];
 
-const SearchSelect = ({ itemClass = '', size = 'large', placeholder = '' }) => {
+const SearchSelect = ({
+	itemClass = '',
+	size = 'large',
+	placeholder = '',
+	currentSelected = null,
+}) => {
 	const [query, setQuery] = useState('');
-	const [selected, setSelected] = useState(null);
+	const [selected, setSelected] = useState(currentSelected);
 
 	const sizeClass = {
 		small: '!ctx-text-xs !ctx-py-2 !ctx-pl-2 !ctx-pr-7 !ctx-shadow-custom-sm focus:!ctx-shadow-custom-sm',
@@ -47,11 +52,11 @@ const SearchSelect = ({ itemClass = '', size = 'large', placeholder = '' }) => {
 			onChange={(value) => setSelected(value)}
 			onClose={() => setQuery('')}
 		>
-			<div className="ctx-relative">
+			<div className="ctx-relative ctx-flex-grow">
 				<ComboboxInput
 					placeholder={placeholder}
 					className={cn(
-						'ctx-w-full placeholder:!ctx-text-gray-500 !ctx-rounded-lg !ctx-font-semibold !ctx-text-gray-700 !ctx-border-none !ctx-bg-white',
+						' ctx-w-full placeholder:!ctx-text-gray-500 !ctx-rounded-lg !ctx-font-semibold !ctx-text-gray-700 !ctx-border-none !ctx-bg-white',
 						'focus:!ctx-outline-none data-[focus]:!ctx-outline-none focus-visible:!ctx-outline-none',
 						sizeClass[size]
 					)}
