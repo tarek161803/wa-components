@@ -89,10 +89,10 @@ const ManageFeedTable = () => {
 								<ToggleSwitch />
 							</span>
 						</Table.Cell>
-						<Table.Cell className="ctx-py-3.5">
+						<Table.Cell className="ctx-py-3.5 ctx-text-gray-700 ctx-text-sm ctx-font-normal">
 							{row.feedName}
 						</Table.Cell>
-						<Table.Cell>
+						<Table.Cell className="ctx-text-gray-700 ctx-text-sm ctx-font-normal">
 							<span className="ctx-flex ctx-items-center ctx-gap-3">
 								<img
 									className="ctx-size-4"
@@ -105,10 +105,10 @@ const ManageFeedTable = () => {
 						<Table.Cell className="ctx-text-center ctx-font-spaceport ctx-text-xs ctx-text-[#EA580C]">
 							{row.fileType}
 						</Table.Cell>
-						<Table.Cell className="ctx-py-1">
+						<Table.Cell className="ctx-py-1 ctx-text-gray-700 ctx-text-sm ctx-font-normal">
 							<FeedUrlCopy url={row.feedUrl} />
 						</Table.Cell>
-						<Table.Cell className="ctx-text-center">
+						<Table.Cell className="ctx-text-center ctx-text-gray-700 ctx-text-sm ctx-font-normal">
 							{row.interval}
 						</Table.Cell>
 						<Table.Cell className="ctx-font-spaceport ctx-text-gray-600 ctx-py-0 ctx-text-[10px]">

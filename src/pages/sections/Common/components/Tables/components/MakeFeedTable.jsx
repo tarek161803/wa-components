@@ -87,16 +87,18 @@ const MakeFeedTable = () => {
 				<Table.Head>
 					<Table.Row className="!ctx-bg-gray-100">
 						<Table.Cell></Table.Cell>
-						<Table.Cell className="ctx-py-3.5">
+						<Table.Cell className="ctx-py-3.5 ctx-px-1.5">
 							Attribute
 						</Table.Cell>
-						<Table.Cell>Prefix</Table.Cell>
-						<Table.Cell>Type</Table.Cell>
-						<Table.Cell>Value</Table.Cell>
-						<Table.Cell>Suffix</Table.Cell>
-						<Table.Cell>Output Type</Table.Cell>
-						<Table.Cell>Command</Table.Cell>
-						<Table.Cell>Actions</Table.Cell>
+						<Table.Cell className="ctx-px-1.5">Prefix</Table.Cell>
+						<Table.Cell className="ctx-px-1.5">Type</Table.Cell>
+						<Table.Cell className="ctx-px-1.5">Value</Table.Cell>
+						<Table.Cell className="ctx-px-1.5">Suffix</Table.Cell>
+						<Table.Cell className="ctx-px-1.5">
+							Output Type
+						</Table.Cell>
+						<Table.Cell className="ctx-px-1.5">Command</Table.Cell>
+						<Table.Cell className="ctx-px-1.5">Actions</Table.Cell>
 					</Table.Row>
 				</Table.Head>
 				<DragDropContext onDragEnd={handleDragEnd}>
@@ -128,39 +130,40 @@ const MakeFeedTable = () => {
 														<Bars3Icon className="ctx-size-5 ctx-text-gray-700" />
 													</button>
 												</Table.Cell>
-												<Table.Cell className="ctx-py-2">
+												<Table.Cell className="ctx-py-2 ctx-px-1.5">
 													<SearchSelect
 														size="small"
 														placeholder="Select Attribute"
 													/>
 												</Table.Cell>
-												<Table.Cell>
+												<Table.Cell className="ctx-px-1.5">
 													<Input
 														value={row.channel}
 														className="ctx-w-32"
 														size="small"
 													/>
 												</Table.Cell>
-												<Table.Cell>
+												<Table.Cell className="ctx-px-1.5">
 													<ToggleButton
 														active={buttons[0]}
 														buttons={buttons}
 													/>
 												</Table.Cell>
-												<Table.Cell>
+												<Table.Cell className="ctx-px-1.5">
 													<SearchSelect
 														size="small"
 														placeholder="Select Attribute"
 													/>
 												</Table.Cell>
-												<Table.Cell className="ctx-py-1">
+												<Table.Cell className="ctx-py-1 ctx-px-1.5">
 													<Input
 														className="ctx-w-32"
 														size="small"
 													/>
 												</Table.Cell>
-												<Table.Cell className="ctx-text-center">
+												<Table.Cell className="ctx-text-center ctx-px-1.5">
 													<Select
+														className="ctx-min-w-32"
 														size="small"
 														selected={{
 															id: 1,
@@ -186,13 +189,13 @@ const MakeFeedTable = () => {
 														]}
 													/>
 												</Table.Cell>
-												<Table.Cell>
+												<Table.Cell className="ctx-px-1.5">
 													<Input
 														className="ctx-w-32"
 														size="small"
 													/>
 												</Table.Cell>
-												<Table.Cell className="ctx-text-center ctx-align-middle">
+												<Table.Cell className="ctx-text-center ctx-align-middle ctx-px-1.5">
 													<div className="ctx-flex ctx-items-center ctx-gap-1.5">
 														<button>
 															<TrashIcon

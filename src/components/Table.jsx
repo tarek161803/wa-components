@@ -1,12 +1,19 @@
 import React from 'react';
 import cn from '../utils/cn';
 
-const Table = ({ children, ...props }) => {
+const Table = ({ children, containerClass = '', className = '' }) => {
 	return (
-		<div className="ctx-overflow-hidden ctx-border ctx-border-gray-200 ctx-rounded-lg">
+		<div
+			className={cn(
+				'ctx-overflow-hidden ctx-border ctx-border-gray-200 ctx-rounded-lg',
+				containerClass
+			)}
+		>
 			<table
-				{...props}
-				className="ctx-min-w-full ctx-divide-y ctx-divide-gray-200"
+				className={cn(
+					'ctx-min-w-full ctx-divide-y ctx-divide-gray-200',
+					className
+				)}
 			>
 				{children}
 			</table>
@@ -40,7 +47,12 @@ const TableRow = ({ children, className = '' }) => {
 
 const TableCell = ({ children, className = '' }) => {
 	return (
-		<td className={cn('ctx-px-3 ctx-text-sm ctx-text-gray-700', className)}>
+		<td
+			className={cn(
+				'ctx-px-3 ctx-text-gray-900 ctx-font-semibold ctx-text-base',
+				className
+			)}
+		>
 			{children}
 		</td>
 	);

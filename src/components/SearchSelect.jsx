@@ -28,6 +28,7 @@ const SearchSelect = ({
 	size = 'large',
 	placeholder = '',
 	currentSelected = null,
+	inputClassName = '',
 }) => {
 	const [query, setQuery] = useState('');
 	const [selected, setSelected] = useState(currentSelected);
@@ -56,9 +57,10 @@ const SearchSelect = ({
 				<ComboboxInput
 					placeholder={placeholder}
 					className={cn(
-						' ctx-w-full placeholder:!ctx-text-gray-500 !ctx-rounded-lg !ctx-font-semibold !ctx-text-gray-700 !ctx-border-none !ctx-bg-white',
+						' ctx-w-full  placeholder:!ctx-text-gray-500 !ctx-rounded-lg !ctx-font-semibold !ctx-text-gray-700 !ctx-border-none !ctx-bg-white',
 						'focus:!ctx-outline-none data-[focus]:!ctx-outline-none focus-visible:!ctx-outline-none',
-						sizeClass[size]
+						sizeClass[size],
+						inputClassName
 					)}
 					displayValue={(person) => person?.name}
 					onChange={(event) => setQuery(event.target.value)}

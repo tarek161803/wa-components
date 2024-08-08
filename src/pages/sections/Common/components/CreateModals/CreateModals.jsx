@@ -2,6 +2,7 @@ import React from 'react';
 import ComponentContainer from '../../../../components/ComponentContainer';
 import AttributeMapping from './Components/AttributeMapping/AttributeMapping';
 import DynamicAttribute from './Components/DynamicAttribute/DynamicAttribute';
+import WpOptions from './Components/WpOptions/WpOptions';
 
 const CreateModals = () => {
 	return (
@@ -9,6 +10,7 @@ const CreateModals = () => {
 			<div className="ctx-flex ctx-gap-8">
 				<AttributeMapping />
 				<DynamicAttribute />
+				<WpOptions />
 			</div>
 		</ComponentContainer>
 	);

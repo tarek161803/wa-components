@@ -15,7 +15,7 @@ const data = [
 
 const AttributeMapping = () => {
 	const [attributes, setAttributes] = useState([...data]);
-	const [open, setOpen] = useState(true);
+	const [open, setOpen] = useState(false);
 
 	const handleAddNewAttribute = () => {
 		setAttributes((prevState) => [
@@ -55,108 +55,106 @@ const AttributeMapping = () => {
 				isOpen={open}
 				setIsOpen={setOpen}
 				className="ctx-w-[576px]"
+				title="Attribute Mapping"
 			>
-				<div className="ctx-relative">
-					<h3 className="ctx-text-white ctx-font-semibold ctx-text-2xl ctx-text-center ctx-mb-6 ">
-						Attribute Mapping
-					</h3>
-					<div className="ctx-bg-gray-100 ctx-rounded-2xl ctx-p-4">
-						<div className="ctx-flex ctx-gap-2 ctx-mx-7">
-							<div className="ctx-flex-grow">
-								<Label htmlFor="attribute-name">
-									Attribute Name
-								</Label>
-								<Input id="attribute-name" size="small" />
-							</div>
-							<div className="ctx-flex-grow">
-								<Label htmlFor="attribute-name">
-									Attribute Separator
-								</Label>
-								<Input id="attribute-name" size="small" />
-							</div>
+				<div className="ctx-bg-gray-50 ctx-rounded-2xl ctx-p-4">
+					<div className="ctx-flex ctx-gap-4 ctx-mx-7">
+						<div className="ctx-flex-grow">
+							<Label htmlFor="attribute-name">
+								Attribute Name
+							</Label>
+							<Input id="attribute-name" size="small" />
 						</div>
+						<div className="ctx-flex-grow">
+							<Label htmlFor="attribute-name">
+								Attribute Separator
+							</Label>
+							<Input id="attribute-name" size="small" />
+						</div>
+					</div>
 
-						<div className="ctx-mt-4">
-							<p className="ctx-ml-7 ctx-mb-1">
-								Select Attribute*
-							</p>
-							<DragDropContext onDragEnd={handleDragEnd}>
-								<Droppable droppableId="attribute-mapping">
-									{(provided) => {
-										return (
-											<div
-												{...provided.droppableProps}
-												ref={provided.innerRef}
-											>
-												{attributes.map(
-													(item, index) => (
-														<Draggable
-															key={item.id}
-															draggableId={`${item.id}`}
-															index={index}
+					<div className="ctx-mt-4">
+						<p className="ctx-ml-7">Select Attribute*</p>
+						<DragDropContext onDragEnd={handleDragEnd}>
+							<Droppable droppableId="attribute-mapping">
+								{(provided) => {
+									return (
+										<div
+											{...provided.droppableProps}
+											ref={provided.innerRef}
+										>
+											{attributes.map((item, index) => (
+												<Draggable
+													key={item.id}
+													draggableId={`${item.id}`}
+													index={index}
+												>
+													{(provided) => (
+														<div
+															ref={
+																provided.innerRef
+															}
+															{...provided.draggableProps}
+															className="ctx-flex ctx-items-center ctx-gap-2 ctx-py-1.5"
 														>
-															{(provided) => (
-																<div
-																	ref={
-																		provided.innerRef
-																	}
-																	{...provided.draggableProps}
-																	className="ctx-flex ctx-items-center ctx-gap-2 ctx-py-1.5"
-																>
-																	<button
-																		{...provided.dragHandleProps}
-																	>
-																		<Bars3Icon className="ctx-size-5 ctx-text-gray-700" />
-																	</button>
+															<button
+																{...provided.dragHandleProps}
+															>
+																<Bars3Icon className="ctx-size-5 ctx-text-gray-700" />
+															</button>
 
-																	<SearchSelect
-																		currentSelected={
-																			item.selected
-																		}
-																		size="small"
-																	/>
+															<SearchSelect
+																currentSelected={
+																	item.selected
+																}
+																size="small"
+															/>
 
-																	<button
-																		onClick={() => {
-																			handleAttributeDelete(
-																				item.id
-																			);
-																		}}
-																	>
-																		<TrashIcon className="ctx-size-5 ctx-text-gray-700" />
-																	</button>
-																</div>
-															)}
-														</Draggable>
-													)
-												)}
-												{provided.placeholder}
-											</div>
-										);
-									}}
-								</Droppable>
-							</DragDropContext>
+															<button
+																onClick={() => {
+																	handleAttributeDelete(
+																		item.id
+																	);
+																}}
+															>
+																<TrashIcon className="ctx-size-5 ctx-text-gray-700" />
+															</button>
+														</div>
+													)}
+												</Draggable>
+											))}
+											{provided.placeholder}
+										</div>
+									);
+								}}
+							</Droppable>
+						</DragDropContext>
 
-							<div className="ctx-mx-7 ctx-flex ctx-justify-end ctx-mt-4">
-								<Button
-									onClick={handleAddNewAttribute}
-									type="outline"
-									size="medium"
-									icon={
-										<PlusCircleIcon className="ctx-size-4 ctx-text-primary" />
-									}
-								>
-									Add More Attribute
-								</Button>
-							</div>
+						<div className="ctx-mx-7 ctx-flex ctx-justify-end ctx-mt-4">
+							<Button
+								onClick={handleAddNewAttribute}
+								type="outline"
+								size="medium"
+								icon={
+									<PlusCircleIcon className="ctx-size-4 ctx-text-primary" />
+								}
+							>
+								Add More Attribute
+							</Button>
 						</div>
 					</div>
-					<div className="ctx-flex ctx ctx-justify-end ctx-gap-4 ctx-mt-4">
-						<Button className="ctx-w-20" type="outline">
-							Cancel
-						</Button>
-						<Button className="ctx-w-20">Save</Button>
-					</div>
+				</div>
+				<div className="ctx-flex ctx ctx-justify-end ctx-gap-4 ctx-mt-4">
+					<Button
+						onClick={() => {
+							setOpen(false);
+						}}
+						className="ctx-w-20"
+						type="outline"
+					>
+						Cancel
+					</Button>
+					<Button className="ctx-w-20">Save</Button>
 				</div>
 			</CreateModal>
 		</div>

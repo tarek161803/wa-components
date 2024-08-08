@@ -12,8 +12,8 @@ const Button = ({
 	...props
 }) => {
 	const sizeClass = {
-		small: `${type === 'outline' || type === 'destructive-outline' ? 'ctx-px-[5px] ctx-py-0.5' : 'ctx-px-1.5 ctx-py-[3px]'}   ctx-text-[10px] ctx-rounded ctx-shadow-custom-sm`,
-		medium: `${type === 'outline' || type === 'destructive-outline' ? 'ctx-p-[7px]' : 'ctx-p-2'} ctx-text-xs`,
+		small: `${type === 'outline' || type === 'destructive-outline' ? 'ctx-px-[5px] ctx-py-0.5' : 'ctx-px-1.5 ctx-py-[3px]'} ctx-text-[10px] ctx-rounded ctx-shadow-custom-sm`,
+		medium: `${type === 'outline' || type === 'destructive-outline' ? 'ctx-p-[7px]' : 'ctx-p-2'} ctx-text-xs ctx-shadow-custom-sm`,
 		large: `${type === 'outline' || type === 'destructive-outline' ? 'ctx-p-[9px]' : 'ctx-p-2.5'} ctx-text-sm`,
 	};
 
@@ -32,7 +32,7 @@ const Button = ({
 			{...props}
 			disabled={disabled}
 			className={cn(
-				'ctx-font-semibold ctx-rounded-lg ctx-shadow-custom ctx-flex ctx-items-center ctx-justify-center ctx-gap-1.5 ctx-font-sans ',
+				'ctx-font-semibold ctx-select-none ctx-rounded-lg ctx-shadow-custom ctx-flex ctx-items-center ctx-justify-center ctx-gap-1.5 ctx-font-sans ',
 				sizeClass[size],
 				typeClass[type],
 				className
