@@ -34,8 +34,8 @@ const SearchSelect = ({
 	const [selected, setSelected] = useState(currentSelected);
 
 	const sizeClass = {
-		small: '!ctx-text-xs !ctx-py-2 !ctx-pl-2 !ctx-pr-7 !ctx-shadow-custom-sm focus:!ctx-shadow-custom-sm',
-		large: '!ctx-text-sm !ctx-py-2.5 !ctx-pl-2.5 !ctx-pr-8 !ctx-shadow-custom focus:!ctx-shadow-custom',
+		small: '!ctx-text-xs !ctx-py-[7px] !ctx-pl-2 !ctx-pr-7 !ctx-shadow-custom-sm-light focus:!ctx-shadow-custom-sm-light',
+		large: '!ctx-text-sm !ctx-py-[9px] !ctx-pl-2.5 !ctx-pr-8 !ctx-shadow-custom-light focus:!ctx-shadow-custom-light',
 	};
 
 	const filteredPeople =
@@ -57,7 +57,7 @@ const SearchSelect = ({
 				<ComboboxInput
 					placeholder={placeholder}
 					className={cn(
-						' ctx-w-full  placeholder:!ctx-text-gray-500 !ctx-rounded-lg !ctx-font-semibold !ctx-text-gray-700 !ctx-border-none !ctx-bg-white',
+						' ctx-w-full placeholder:!ctx-text-gray-500 !ctx-rounded-lg !ctx-font-semibold !ctx-text-gray-700 !ctx-border !ctx-border-gray-100 !ctx-bg-white',
 						'focus:!ctx-outline-none data-[focus]:!ctx-outline-none focus-visible:!ctx-outline-none',
 						sizeClass[size],
 						inputClassName

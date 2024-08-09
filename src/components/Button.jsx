@@ -7,7 +7,7 @@ const Button = ({
 	className = '',
 	size = 'large',
 	type = 'primary',
-	icon = '',
+	icon = null,
 	disabled = false,
 	...props
 }) => {

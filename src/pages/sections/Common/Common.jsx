@@ -7,6 +7,7 @@ import Button from '../../../components/Button';
 import MainContainer from '../../../components/MainContainer';
 import ImportModal from '../../../components/ManageFeed/ImportModal';
 import ChatBoxes from './ChatBoxes/ChatBoxes';
+import AdvanceFilters from './components/AdvanceFilters/AdvanceFilters';
 import Buttons from './components/Buttons/Buttons';
 import Checkboxes from './components/Checkboxes/Checkboxes';
 import CreateModals from './components/CreateModals/CreateModals';
@@ -33,6 +34,7 @@ const Common = () => {
 
 	return (
 		<div className="ctx-mt-4 ctx-font-sans ctx-space-y-8 ctx-mr-4">
+			<AdvanceFilters />
 			<CreateModals />
 			<GeneratingFeeds />
 			<ChatBoxes />

@@ -145,6 +145,7 @@ const AttributeMapping = () => {
 														</Table.Cell>
 														<Table.Cell className="ctx-px-1.5">
 															<Select
+																className="!ctx-shadow-custom-sm-light !ctx-border !ctx-border-gray-100 ctx-py-[7px]"
 																size="small"
 																selected={{
 																	id: 1,

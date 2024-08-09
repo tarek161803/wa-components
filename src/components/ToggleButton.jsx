@@ -1,6 +1,11 @@
 import React from 'react';
 import cn from '../utils/cn';
 
+// const sampleData = [
+// 	{ title: 'Attribute', value: 'attribute' },
+// 	{ title: 'Text', value: 'text' },
+// ];
+
 const ToggleButton = ({ buttons, active, onChange }) => {
 	return (
 		<div className="ctx-flex ctx-shadow-custom-sm ctx-rounded-lg">
@@ -8,7 +13,7 @@ const ToggleButton = ({ buttons, active, onChange }) => {
 				<button
 					onClick={() => onChange(button)}
 					className={cn(
-						'ctx-text-sm first:ctx-rounded-l-lg last:ctx-rounded-r-lg ctx-border ctx-border-primary ctx-py-[5px] ctx-px-3.5 ctx-bg-white ctx-text-gray-900 ctx-font-medium ',
+						'ctx-text-sm first:ctx-rounded-l-lg last:ctx-rounded-r-lg ctx-border ctx-border-primary ctx-py-[5px] ctx-px-3.5 ctx-bg-white ctx-text-gray-900 ctx-font-medium focus-visible:ctx-outline-none',
 						{
 							'ctx-bg-gradient-to-r ctx-from-primary ctx-to-primary-light ctx-text-white':
 								button.value === active.value,

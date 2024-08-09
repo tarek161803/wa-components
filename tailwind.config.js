@@ -19,6 +19,8 @@ export default {
 			boxShadow: {
 				custom: '2px 2px 0px 1px rgba(88, 98, 118, 0.32)',
 				'custom-sm': '1px 1px 0px 1px rgba(107, 114, 128, 0.30)',
+				'custom-light': '2px 2px 0px 1px #e5e7eb',
+				'custom-sm-light': '1px 1px 0px 1px #e5e7eb',
 			},
 		},
 	},
