@@ -11,6 +11,7 @@ import AdvanceFilters from './components/AdvanceFilters/AdvanceFilters';
 import Buttons from './components/Buttons/Buttons';
 import Checkboxes from './components/Checkboxes/Checkboxes';
 import CreateModals from './components/CreateModals/CreateModals';
+import CustomFields from './components/CustomFields/CustomFields';
 import DisclosureTabs from './components/DisclosureTabs/DisclosureTabs';
 import FormSubmission from './components/FormSubmission/FormSubmission';
 import Inputs from './components/Inputs/Inputs';
@@ -36,6 +37,7 @@ const Common = () => {
 
 	return (
 		<div className="ctx-mt-4 ctx-font-sans ctx-space-y-8 ctx-mr-4">
+			<CustomFields />
 			<ProModals />
 			<FormSubmission />
 			<AdvanceFilters />
