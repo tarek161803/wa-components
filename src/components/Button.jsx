@@ -32,7 +32,7 @@ const Button = ({
 			{...props}
 			disabled={disabled}
 			className={cn(
-				'ctx-font-semibold ctx-select-none ctx-rounded-lg ctx-shadow-custom ctx-flex ctx-items-center ctx-justify-center ctx-gap-1.5 ctx-font-sans ',
+				'ctx-font-semibold ctx-select-none ctx-rounded-lg ctx-shadow-custom ctx-flex ctx-items-center ctx-justify-center ctx-gap-1.5 ctx-font-sans focus-visible:ctx-outline-none',
 				sizeClass[size],
 				typeClass[type],
 				className

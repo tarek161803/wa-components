@@ -1,6 +1,7 @@
 import React from 'react';
 import ComponentContainer from '../../../../components/ComponentContainer';
 import AttributeMapping from './Components/AttributeMapping/AttributeMapping';
+import CategoryMapping from './Components/CategoryMapping/CategoryMapping';
 import DynamicAttribute from './Components/DynamicAttribute/DynamicAttribute';
 import WpOptions from './Components/WpOptions/WpOptions';
 
@@ -11,6 +12,7 @@ const CreateModals = () => {
 				<AttributeMapping />
 				<DynamicAttribute />
 				<WpOptions />
+				<CategoryMapping />
 			</div>
 		</ComponentContainer>
 	);
