@@ -8,6 +8,7 @@ import Button from '../../../../../components/Button';
 import Input from '../../../../../components/Input';
 import LinkButton from '../../../../../components/LinkButton';
 import SearchSelect from '../../../../../components/SearchSelect';
+import Select from '../../../../../components/Select';
 import ToggleButton from '../../../../../components/ToggleButton';
 import ComponentContainer from '../../../../components/ComponentContainer';
 
@@ -50,6 +51,12 @@ const filters = [
 			},
 		],
 	},
+];
+
+const operators = [
+	{ id: 1, name: 'Is Equal' },
+	{ id: 2, name: 'Is Not Equal' },
+	{ id: 3, name: 'Greater Than' },
 ];
 
 const AdvanceFilters = () => {
@@ -179,9 +186,11 @@ const AdvanceFilters = () => {
 											/>
 										</div>
 										<div className="ctx-col-span-3 ctx-pl-4">
-											<SearchSelect
-												placeholder="Select Condition"
+											<Select
 												size="small"
+												className="!ctx-shadow-custom-sm-light focus:!ctx-shadow-custom-sm-light !ctx-border !ctx-border-gray-100 ctx-py-[7px]"
+												placeholder="Select Condition"
+												items={operators}
 											/>
 										</div>
 										<div className="ctx-col-span-3 ctx-pl-4">

@@ -12,6 +12,7 @@ import Buttons from './components/Buttons/Buttons';
 import Checkboxes from './components/Checkboxes/Checkboxes';
 import CreateModals from './components/CreateModals/CreateModals';
 import DisclosureTabs from './components/DisclosureTabs/DisclosureTabs';
+import FormSubmission from './components/FormSubmission/FormSubmission';
 import Inputs from './components/Inputs/Inputs';
 import LinkButtons from './components/LinkButtons/LinkButtons';
 import NoItems from './components/NoItems/NoItems';
@@ -34,6 +35,7 @@ const Common = () => {
 
 	return (
 		<div className="ctx-mt-4 ctx-font-sans ctx-space-y-8 ctx-mr-4">
+			<FormSubmission />
 			<AdvanceFilters />
 			<CreateModals />
 			<GeneratingFeeds />

@@ -674,24 +674,14 @@ video {
   margin-right: auto;
 }
 
-.ctx-my-3{
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+.ctx-my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .ctx-my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-
-.ctx-my-1{
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-
-.ctx-my-2{
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
 .-ctx-mr-8{
@@ -756,6 +746,10 @@ video {
 
 .ctx-mt-6{
   margin-top: 1.5rem;
+}
+
+.ctx-mt-5{
+  margin-top: 1.25rem;
 }
 
 .ctx-block{
@@ -1000,6 +994,10 @@ video {
 
 .ctx-w-screen{
   width: 100vw;
+}
+
+.ctx-w-40{
+  width: 10rem;
 }
 
 .ctx-min-w-32{
@@ -1828,6 +1826,16 @@ video {
 .ctx-text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.ctx-text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.ctx-text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .\!ctx-font-semibold{
