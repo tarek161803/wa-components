@@ -26,7 +26,7 @@ const Input = ({
 				value={value}
 				onChange={onChange}
 				className={cn(
-					'ctx-font-medium placeholder:ctx-text-gray-600 ctx-border !ctx-border-gray-100 !ctx-rounded-lg !ctx-px-2  ctx-flex-grow focus:!ctx-border-primary focus-visible:!ctx-outline-none !ctx-shadow-none',
+					'ctx-font-medium ctx-border !ctx-border-gray-100 !ctx-rounded-lg !ctx-px-2 placeholder:!ctx-text-gray-300  ctx-flex-grow focus:!ctx-border-primary focus-visible:!ctx-outline-none !ctx-shadow-none',
 					sizeClass[size],
 					{
 						'!ctx-pl-7': icon,
