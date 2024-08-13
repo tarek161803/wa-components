@@ -21,6 +21,7 @@ import ProModals from './components/ProModals/ProModals';
 import RadioInputs from './components/RadioInputs/RadioInputs';
 import SearchSelects from './components/SearchSelects/SearchSelects';
 import Selects from './components/Selects/Selects';
+import StatusDisclosures from './components/StatusDisclosures/StatusDisclosures';
 import Tables from './components/Tables/Tables';
 import TabsComponent from './components/TabsComponent/TabsComponent';
 import ToggleButtons from './components/ToggleButtons/ToggleButtons';
@@ -37,6 +38,7 @@ const Common = () => {
 
 	return (
 		<div className="ctx-mt-4 ctx-font-sans ctx-space-y-8 ctx-mr-4">
+			<StatusDisclosures />
 			<CustomFields />
 			<ProModals />
 			<FormSubmission />
