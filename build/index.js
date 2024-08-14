@@ -12123,7 +12123,7 @@ const Activation = () => {
     id: "activation-key",
     placeholder: "Enter Your License Activation Key"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "ctx-mt-4"
+    className: "ctx-mt-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "ctx-block ctx-mb-1.5 ctx-text-base ctx-font-medium ctx-text-gray-800"
   }, "Select Time Period"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -12141,7 +12141,7 @@ const Activation = () => {
       value: 'yearly'
     }
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "ctx-mt-4"
+    className: "ctx-mt-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "ctx-block ctx-mb-1.5 ctx-text-base ctx-font-medium ctx-text-gray-800"
   }, "Select License Type"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -12162,7 +12162,7 @@ const Activation = () => {
       value: 'single'
     }
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "ctx-mt-4 ctx-flex ctx-gap-4"
+    className: "ctx-mt-5 ctx-flex ctx-gap-4"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
     className: "ctx-w-40"
   }, "Active License"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {

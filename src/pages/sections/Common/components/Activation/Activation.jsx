@@ -26,7 +26,7 @@ const Activation = () => {
 								placeholder="Enter Your License Activation Key"
 							/>
 						</div>
-						<div className="ctx-mt-4">
+						<div className="ctx-mt-5">
 							<p className="ctx-block ctx-mb-1.5 ctx-text-base ctx-font-medium ctx-text-gray-800">
 								Select Time Period
 							</p>
@@ -47,7 +47,7 @@ const Activation = () => {
 								/>
 							</div>
 						</div>
-						<div className="ctx-mt-4">
+						<div className="ctx-mt-5">
 							<p className="ctx-block ctx-mb-1.5 ctx-text-base ctx-font-medium ctx-text-gray-800">
 								Select License Type
 							</p>
@@ -77,7 +77,7 @@ const Activation = () => {
 						</div>
 					</div>
 
-					<div className="ctx-mt-4 ctx-flex ctx-gap-4">
+					<div className="ctx-mt-5 ctx-flex ctx-gap-4">
 						<Button className="ctx-w-40">Active License</Button>
 						<Button className="ctx-w-40" type="outline">
 							Mange License
