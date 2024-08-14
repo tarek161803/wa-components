@@ -77,6 +77,14 @@
 	}
 }
 
+.ctx-price-tag {
+	clip-path: polygon(0 0, 100% 0, 100% 78%, 50% 100%, 0 78%);
+}
+
+.ctx-price-tag-triangle {
+	clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
 /* React Toastify CSS Start, Don't Edit Or Delete*/
 
 :root {
