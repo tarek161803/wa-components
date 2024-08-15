@@ -111,10 +111,11 @@ const Pricing = () => {
 								Add To Cart
 							</Button>
 
-							<div className="ctx-absolute ctx-h-20 ctx-w-16 -ctx-top-3 ctx-right-3">
+							<div className="ctx-absolute  ctx-h-20 ctx-w-16 -ctx-top-3 ctx-right-3">
+								<div className="ctx-price-tag ctx-absolute -ctx-top-px -ctx-left-px ctx-h-[82px] ctx-w-[66px] ctx-bg-primary"></div>
 								<div
 									className={cn(
-										'ctx-price-tag ctx-bg-[#dbeafe]  ctx-h-full  ctx-text-primary ctx-flex ctx-flex-col ctx-items-center ctx-justify-center ',
+										'ctx-price-tag ctx-bg-[#dbeafe] ctx-h-full ctx-text-primary ctx-flex ctx-flex-col ctx-items-center ctx-justify-center ',
 										{
 											'ctx-bg-primary ctx-text-white':
 												item.popular,
@@ -126,7 +127,7 @@ const Pricing = () => {
 									</p>
 									<p>Yearly</p>
 								</div>
-								<div className="ctx-price-tag-triangle ctx-h-[11px] ctx-w-[9px]  ctx-bg-primary ctx-z-20 ctx-absolute ctx-top-0 -ctx-left-[9px]"></div>
+								<div className="ctx-price-tag-triangle ctx-h-3 ctx-w-[9px]  ctx-bg-primary ctx-z-20 ctx-absolute -ctx-top-px -ctx-left-[10px]"></div>
 							</div>
 						</div>
 					))}

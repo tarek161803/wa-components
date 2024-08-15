@@ -15194,15 +15194,17 @@ const Pricing = () => {
     size: "medium",
     className: "ctx-w-24"
   }, "Add To Cart"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "ctx-absolute ctx-h-20 ctx-w-16 -ctx-top-3 ctx-right-3"
+    className: "ctx-absolute  ctx-h-20 ctx-w-16 -ctx-top-3 ctx-right-3"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: (0,_utils_cn__WEBPACK_IMPORTED_MODULE_3__["default"])('ctx-price-tag ctx-bg-[#dbeafe]  ctx-h-full  ctx-text-primary ctx-flex ctx-flex-col ctx-items-center ctx-justify-center ', {
+    className: "ctx-price-tag ctx-absolute -ctx-top-px -ctx-left-px ctx-h-[82px] ctx-w-[66px] ctx-bg-primary"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: (0,_utils_cn__WEBPACK_IMPORTED_MODULE_3__["default"])('ctx-price-tag ctx-bg-[#dbeafe] ctx-h-full ctx-text-primary ctx-flex ctx-flex-col ctx-items-center ctx-justify-center ', {
       'ctx-bg-primary ctx-text-white': item.popular
     })
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "ctx-text-xl ctx-font-semibold ctx-leading-3 ctx-mb-1.5"
   }, "$", item.price), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Yearly")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "ctx-price-tag-triangle ctx-h-[11px] ctx-w-[9px]  ctx-bg-primary ctx-z-20 ctx-absolute ctx-top-0 -ctx-left-[9px]"
+    className: "ctx-price-tag-triangle ctx-h-3 ctx-w-[9px]  ctx-bg-primary ctx-z-20 ctx-absolute -ctx-top-px -ctx-left-[10px]"
   })))))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Pricing);
