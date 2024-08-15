@@ -5,8 +5,8 @@ import Premium from './sections/Premium/Premium';
 const Main = () => {
 	return (
 		<>
-			<Premium />
 			<Common />
+			<Premium />
 		</>
 	);
 };

@@ -36,15 +36,15 @@ const ActionsPanel = () => {
 					gap: 8,
 					to: 'bottom',
 				}}
-				className="ctx-bg-white ctx-p-2 ctx-rounded-md ctx-space-y-2 ctx-shadow-md"
+				className="ctx-bg-white ctx-rounded-md ctx-shadow-lg"
 			>
 				{panelOptions.map((option) => (
 					<button
-						className="ctx-bg-gray-100 ctx-w-full ctx-rounded-md ctx-p-1.5 ctx-border ctx-border-gray-200 ctx-flex ctx-gap-1 hover:ctx-bg-white hover:ctx-border-primary ctx-transition-colors ctx-duration-300 "
+						className="ctx-border ctx-border-white last:ctx-rounded-b-md first:ctx-rounded-t-md hover:ctx-border-primary ctx-w-full ctx-py-1.5 ctx-px-4  ctx-flex ctx-items-center ctx-gap-2  hover:ctx-bg-gray-100 ctx-transition-colors ctx-duration-300 "
 						key={option.id}
 					>
 						<option.icon className="ctx-size-[18px]" />
-						<span className="ctx-text-xs ctx-text-gray-900">
+						<span className="ctx-font-sans ctx-text-xs ctx-text-gray-800">
 							{option.title}
 						</span>
 					</button>

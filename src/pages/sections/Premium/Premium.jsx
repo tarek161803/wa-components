@@ -1,6 +1,7 @@
 import React from 'react';
 
 import advanceFeatures from '../../../../data/advanceFeatures';
+import CTASection from './components/CTASection';
 import FeatureWithVideo from './components/FeatureWithVideo';
 import Hero from './components/Hero';
 import Pricing from './components/Pricing';
@@ -19,6 +20,7 @@ const Premium = () => {
 				<FeatureWithVideo data={advanceFeatures} />
 				<Pricing />
 			</div>
+			<CTASection />
 		</div>
 	);
 };

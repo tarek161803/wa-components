@@ -30,7 +30,7 @@ const Select = ({
 		<Listbox value={selected} onChange={onChange}>
 			<ListboxButton
 				className={cn(
-					'ctx-relative ctx-bg-white ctx-text-sm ctx-block ctx-w-full ctx-rounded-lg ctx-pr-8 ctx-pl-3 ctx-text-left ctx-font-semibold ctx-text-gray-700 focus-visible:ctx-outline-none',
+					'ctx-relative ctx-bg-white ctx-text-sm ctx-block ctx-w-full ctx-rounded-lg ctx-pr-8 ctx-pl-3 ctx-text-left ctx-font-medium ctx-text-gray-700 focus-visible:ctx-outline-none',
 					sizeClass[size],
 					className
 				)}
@@ -51,7 +51,7 @@ const Select = ({
 				}}
 				transition
 				className={cn(
-					'ctx-z-20 ctx-scrollbar ctx-bg-white ctx-shadow-md !ctx-max-h-60 ctx-space-y-2 ctx-min-w-[var(--button-width)] ctx-rounded-lg ctx-border ctx-p-2 focus:ctx-outline-none',
+					'ctx-z-20 ctx-scrollbar ctx-bg-white ctx-shadow-md !ctx-max-h-60 ctx-min-w-[var(--button-width)] ctx-rounded-lg ctx-border focus:ctx-outline-none',
 					'ctx-transition ctx-duration-100 ctx-ease-in data-[closed]:ctx-opacity-0'
 				)}
 			>
@@ -60,13 +60,13 @@ const Select = ({
 						key={item.name}
 						value={item}
 						className={cn(
-							'ctx-cursor-pointer data-[selected]:ctx-bg-white data-[selected]:ctx-border-primary ctx-text-xs ctx-text-gray-900 ctx-bg-gray-100 ctx-border ctx-rounded-lg ctx-flex ctx-border-gray-200 ctx-transform ctx-duration-300  hover:ctx-border-primary hover:ctx-bg-white ctx-items-center ctx-gap-2 ctx-py-[7px] ctx-px-3 ctx-select-none',
+							'ctx-cursor-pointer data-[selected]:ctx-bg-primary/10 data-[focus]:ctx-bg-gray-100 ctx-text-xs ctx-text-gray-900 ctx-bg-white ctx-flex ctx-transform ctx-duration-300  hover:ctx-border-primary hover:ctx-bg-gray-100 ctx-items-center ctx-gap-2 ctx-py-[7px] ctx-px-3 ctx-select-none',
 							itemClass
 						)}
 					>
 						{item.icon && (
 							<img
-								className="ctx-size-4"
+								className="ctx-size-3.5"
 								src={item.icon}
 								alt=""
 							/>

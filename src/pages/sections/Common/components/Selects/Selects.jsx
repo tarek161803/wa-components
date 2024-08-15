@@ -70,9 +70,8 @@ const Selects = () => {
 				</div>
 			</div>
 			<div className="ctx-flex ctx-gap-10 ctx-mt-6">
-				<div className="ctx-w-36">
+				<div className="ctx-w-44">
 					<Select
-						itemClass="ctx-justify-center"
 						placeholder="Bulk Action"
 						items={bulkAction}
 						selected={bulk}

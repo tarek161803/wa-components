@@ -28,6 +28,7 @@ import Tables from './components/Tables/Tables';
 import TabsComponent from './components/TabsComponent/TabsComponent';
 import ToggleButtons from './components/ToggleButtons/ToggleButtons';
 import ToggleSwitches from './components/ToggleSwitches/ToggleSwitches';
+import ToolTips from './components/ToolTips/ToolTips';
 import TopBanners from './components/TopBanners/TopBanners';
 import GeneratingFeeds from './GeneratingFeeds/GeneratingFeeds';
 
@@ -40,6 +41,7 @@ const Common = () => {
 
 	return (
 		<div className="ctx-mt-4 ctx-font-sans ctx-space-y-8 ctx-mr-4">
+			<ToolTips />
 			<Activation />
 			<Support />
 			<StatusDisclosures />

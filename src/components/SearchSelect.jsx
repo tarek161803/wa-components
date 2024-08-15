@@ -57,7 +57,7 @@ const SearchSelect = ({
 				<ComboboxInput
 					placeholder={placeholder}
 					className={cn(
-						' ctx-w-full placeholder:!ctx-text-gray-500 !ctx-rounded-lg !ctx-font-semibold !ctx-text-gray-700 !ctx-border !ctx-border-gray-100 !ctx-bg-white',
+						' ctx-w-full placeholder:!ctx-text-gray-300 !ctx-rounded-lg !ctx-font-medium !ctx-text-gray-700 !ctx-border !ctx-border-gray-100 !ctx-bg-white',
 						'focus:!ctx-outline-none data-[focus]:!ctx-outline-none focus-visible:!ctx-outline-none',
 						sizeClass[size],
 						inputClassName
@@ -82,7 +82,7 @@ const SearchSelect = ({
 				}}
 				transition
 				className={cn(
-					'ctx-min-w-[var(--input-width)] ctx-z-20 ctx-scrollbar ctx-bg-white ctx-shadow-md !ctx-max-h-60 ctx-space-y-2 ctx-rounded-lg ctx-border ctx-p-2 focus:ctx-outline-none empty:ctx-invisible',
+					'ctx-min-w-[var(--input-width)] ctx-z-20 ctx-scrollbar ctx-bg-white ctx-shadow-md !ctx-max-h-60 ctx-rounded-lg ctx-border focus:ctx-outline-none empty:ctx-invisible',
 					'ctx-transition ctx-duration-100 ctx-ease-in data-[leave]:data-[closed]:ctx-opacity-0'
 				)}
 			>
@@ -91,7 +91,7 @@ const SearchSelect = ({
 						key={person.id}
 						value={person}
 						className={cn(
-							'ctx-cursor-pointer data-[selected]:ctx-bg-white data-[selected]:ctx-border-primary ctx-text-xs ctx-text-gray-900 ctx-bg-gray-100 ctx-border ctx-rounded-lg ctx-flex ctx-border-gray-200 ctx-transform ctx-duration-300  hover:ctx-border-primary hover:ctx-bg-white ctx-items-center ctx-gap-2 ctx-py-[7px] ctx-px-3 ctx-select-none',
+							'ctx-cursor-pointer data-[focus]:ctx-bg-gray-100 data-[selected]:ctx-bg-primary/10 ctx-text-xs ctx-text-gray-900 ctx-flex ctx-transform ctx-duration-300   hover:ctx-bg-gray-100 ctx-items-center ctx-gap-2 ctx-py-[7px] ctx-px-3 ctx-select-none',
 							itemClass
 						)}
 					>
