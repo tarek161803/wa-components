@@ -9,7 +9,6 @@ const ButtonsContainer = ({ type, iconColor }) => {
 			<div className="ctx-flex ctx-items-center ctx-gap-8">
 				<div className="ctx-flex ctx-items-center ctx-gap-4">
 					<Button
-						size="large"
 						type={type}
 						icon={
 							<DocumentPlusIcon
@@ -17,11 +16,8 @@ const ButtonsContainer = ({ type, iconColor }) => {
 							/>
 						}
 					/>
-					<Button size="large" type={type}>
-						Make Feed
-					</Button>
+					<Button type={type}>Make Feed</Button>
 					<Button
-						size="large"
 						type={type}
 						icon={
 							<DocumentPlusIcon
@@ -35,6 +31,7 @@ const ButtonsContainer = ({ type, iconColor }) => {
 
 				<div className="ctx-flex ctx-items-center ctx-gap-4">
 					<Button
+						size="medium"
 						type={type}
 						icon={
 							<DocumentPlusIcon
@@ -42,8 +39,11 @@ const ButtonsContainer = ({ type, iconColor }) => {
 							/>
 						}
 					/>
-					<Button type={type}>Make Feed</Button>
+					<Button size="medium" type={type}>
+						Make Feed
+					</Button>
 					<Button
+						size="medium"
 						type={type}
 						icon={
 							<DocumentPlusIcon
