@@ -30,7 +30,7 @@ const WpOptions = () => {
 			>
 				<div className="ctx-bg-gray-50 ctx-rounded-2xl ctx-px-4 ctx-py-6">
 					<p className="ctx-text-gray-800 ctx-text-base ctx-font-medium ctx-m-1">
-						Option Name
+						Option Name*
 					</p>
 					<SearchSelect
 						currentSelected={data[0].selected}

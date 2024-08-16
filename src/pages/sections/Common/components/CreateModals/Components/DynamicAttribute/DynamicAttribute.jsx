@@ -68,10 +68,10 @@ const AttributeMapping = () => {
 				<div className="ctx-bg-gray-50 ctx-rounded-2xl ctx-p-4">
 					<div className="ctx-w-[480px] ctx-mx-auto ctx-mb-4">
 						<Label
-							className="ctx-text-center"
+							className="ctx-text-center ctx-text-base"
 							htmlFor="attribute-name"
 						>
-							Attribute Name
+							Attribute Name*
 						</Label>
 						<Input id="attribute-name" size="small" />
 					</div>

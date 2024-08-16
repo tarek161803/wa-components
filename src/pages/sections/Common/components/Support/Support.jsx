@@ -28,7 +28,7 @@ const Support = () => {
 							className="ctx-block ctx-text-base ctx-font-medium ctx-text-gray-800 ctx-mb-0.5"
 							htmlFor="name"
 						>
-							Your Name
+							Your Name*
 						</label>
 						<Input
 							className="ctx-bg-white"
@@ -41,7 +41,7 @@ const Support = () => {
 							className="ctx-block ctx-text-base ctx-font-medium ctx-text-gray-800 ctx-mb-0.5"
 							htmlFor="name"
 						>
-							Your Email
+							Your Email*
 						</label>
 						<Input
 							className="ctx-bg-white"
@@ -54,10 +54,10 @@ const Support = () => {
 							className="ctx-block ctx-text-base ctx-font-medium ctx-text-gray-800 ctx-mb-0.5"
 							htmlFor="name"
 						>
-							Your Message
+							Your Message*
 						</label>
 						<textarea
-							rows={4}
+							rows={6}
 							className="ctx-bg-white ctx-block ctx-w-full ctx-shadow-custom-sm-light ctx-font-medium ctx-border !ctx-border-gray-100 !ctx-rounded-lg !ctx-px-2 placeholder:!ctx-text-gray-300  ctx-flex-grow focus:!ctx-border-primary focus-visible:!ctx-outline-none "
 						/>
 					</div>

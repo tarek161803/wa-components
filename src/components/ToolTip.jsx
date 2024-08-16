@@ -6,7 +6,7 @@ const ToolTip = () => {
 		<div className="ctx-relative ctx-bg-white ctx-rounded-2xl ctx-w-[440px] ">
 			<div className="ctx-p-4">
 				<h3 className="ctx-font-semibold ctx-text-gray-900 ctx-text-lg">
-					Thank you for install CTX Product Feed. 🙂
+					Thank you for install CTX Product Feed 😊
 				</h3>
 				<p className="ctx-font-normal ctx-text-gray-900 ctx-text-base">
 					If you want to set-up your product feed to enhance your
@@ -16,9 +16,18 @@ const ToolTip = () => {
 			</div>
 			<div className="ctx-bg-gray-50 ctx-rounded-b-2xl ctx-p-4">
 				<div className="ctx-flex ctx-justify-between ctx-items-center">
-					<button className="ctx-text-sm ctx-font-semibold ctx-text-red-500">
+					<button className="ctx-text-sm ctx-font-semibold ctx-text-red-500 ctx-underline ctx-underline-offset-2">
 						Skip All
 					</button>
+
+					<div className="ctx-flex ctx-items-center ctx-gap-1.5">
+						<div className="ctx-size-3 ctx-bg-gray-300 ctx-rounded-full" />
+						<div className="ctx-size-3 ctx-bg-gray-200 ctx-rounded-full" />
+						<div className="ctx-size-3 ctx-bg-gray-200 ctx-rounded-full" />
+						<div className="ctx-size-3 ctx-bg-gray-200 ctx-rounded-full" />
+						<div className="ctx-size-3 ctx-bg-gray-200 ctx-rounded-full" />
+					</div>
+
 					<div className="ctx-flex ctx-gap-3">
 						<Button
 							size="medium"

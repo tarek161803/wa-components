@@ -6,7 +6,7 @@ import ComponentContainer from '../../../../components/ComponentContainer';
 const StatusDisclosures = () => {
 	return (
 		<ComponentContainer className="ctx-bg-white" title="Status Disclosure">
-			<div className="ctx-space-y-4">
+			<div className="ctx-space-y-3">
 				{Object.keys(status).map((item) => (
 					<StatusDisclosure
 						key={item}

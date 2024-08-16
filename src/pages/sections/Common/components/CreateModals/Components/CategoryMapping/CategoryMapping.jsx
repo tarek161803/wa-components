@@ -1,4 +1,5 @@
 /* eslint-disable no-shadow */
+import { ArrowDownIcon } from '@heroicons/react/24/outline';
 import { PlusCircleIcon } from '@heroicons/react/24/solid';
 import React, { useState } from 'react';
 import Button from '../../../../../../../components/Button';
@@ -29,13 +30,13 @@ const CategoryMapping = () => {
 				isOpen={open}
 				setIsOpen={setOpen}
 				className="ctx-w-[1140px] ctx-min-h-60"
-				title="Attribute Mapping"
+				title="New Category Mapping"
 			>
 				<div className="ctx-bg-gray-50 ctx-rounded-2xl ctx-px-4 ctx-py-6">
 					<div className="ctx-flex ctx-gap-3">
 						<div className="ctx-flex-grow">
 							<p className="ctx-text-gray-800 ctx-text-base ctx-font-medium ctx-m-1">
-								Mapping Name
+								Mapping Name*
 							</p>
 							<Input size="small" />
 						</div>
@@ -95,7 +96,16 @@ const CategoryMapping = () => {
 										Clothing
 									</Table.Cell>
 									<Table.Cell>
-										<SearchSelect size="small" />
+										<div className="ctx-flex ctx-gap-2">
+											<SearchSelect size="small" />
+											<Button
+												size="medium"
+												type="outline"
+												icon={
+													<ArrowDownIcon className="ctx-size-4" />
+												}
+											/>
+										</div>
 									</Table.Cell>
 								</Table.Row>
 								<Table.Row className="even:ctx-bg-gray-200 odd:ctx-bg-gray-100">

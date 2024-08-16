@@ -12043,11 +12043,11 @@ const StatusDisclosure = ({
   }, ({
     open
   }) => /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(_headlessui_react__WEBPACK_IMPORTED_MODULE_2__.DisclosureButton, {
-    className: (0,_utils_cn__WEBPACK_IMPORTED_MODULE_0__["default"])('ctx-group ctx-flex ctx-w-full ctx-items-center ctx-bg-gray-100 ctx-justify-between ctx-p-4 focus-visible:ctx-outline-none', {
-      'ctx-border-primary ctx-border ctx-p-[15px]': open
+    className: (0,_utils_cn__WEBPACK_IMPORTED_MODULE_0__["default"])('ctx-group ctx-flex ctx-w-full ctx-items-center ctx-bg-gray-100 ctx-justify-between ctx-px-4 ctx-py-3 focus-visible:ctx-outline-none', {
+      'ctx-border-primary ctx-border ctx-px-[15px] ctx-py-[11px]': open
     })
   }, /*#__PURE__*/React.createElement("span", {
-    className: "ctx-text-lg  ctx-font-semibold ctx-text-gray-900"
+    className: "ctx-text-base  ctx-font-semibold ctx-text-gray-900"
   }, title), /*#__PURE__*/React.createElement(_heroicons_react_20_solid__WEBPACK_IMPORTED_MODULE_3__["default"], {
     className: "ctx-size-6 ctx-fill-gray-900 group-data-[open]:ctx-rotate-180"
   })), /*#__PURE__*/React.createElement(_headlessui_react__WEBPACK_IMPORTED_MODULE_2__.DisclosurePanel, {
@@ -12305,15 +12305,27 @@ const ToolTip = () => {
     className: "ctx-p-4"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     className: "ctx-font-semibold ctx-text-gray-900 ctx-text-lg"
-  }, "Thank you for install CTX Product Feed. \uD83D\uDE42"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+  }, "Thank you for install CTX Product Feed \uD83D\uDE0A"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "ctx-font-normal ctx-text-gray-900 ctx-text-base"
   }, "If you want to set-up your product feed to enhance your e-commerce store, then you can do it by simply clicking here.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "ctx-bg-gray-50 ctx-rounded-b-2xl ctx-p-4"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "ctx-flex ctx-justify-between ctx-items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    className: "ctx-text-sm ctx-font-semibold ctx-text-red-500"
+    className: "ctx-text-sm ctx-font-semibold ctx-text-red-500 ctx-underline ctx-underline-offset-2"
   }, "Skip All"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "ctx-flex ctx-items-center ctx-gap-1.5"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "ctx-size-3 ctx-bg-gray-300 ctx-rounded-full"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "ctx-size-3 ctx-bg-gray-200 ctx-rounded-full"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "ctx-size-3 ctx-bg-gray-200 ctx-rounded-full"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "ctx-size-3 ctx-bg-gray-200 ctx-rounded-full"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "ctx-size-3 ctx-bg-gray-200 ctx-rounded-full"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "ctx-flex ctx-gap-3"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
     size: "medium",
@@ -13190,7 +13202,7 @@ const AttributeMapping = () => {
     className: "ctx-flex-grow"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Label__WEBPACK_IMPORTED_MODULE_4__["default"], {
     htmlFor: "attribute-name"
-  }, "Attribute Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Input__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, "Attribute Name*"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Input__WEBPACK_IMPORTED_MODULE_3__["default"], {
     id: "attribute-name",
     size: "small"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -13266,6 +13278,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @heroicons/react/24/outline */ "./node_modules/@heroicons/react/24/outline/esm/ArrowDownIcon.js");
 /* harmony import */ var _heroicons_react_24_solid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @heroicons/react/24/solid */ "./node_modules/@heroicons/react/24/solid/esm/PlusCircleIcon.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
@@ -13276,6 +13289,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Table__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../../../../components/Table */ "./src/components/Table.jsx");
 /* harmony import */ var _components_ToggleButton__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../../../../components/ToggleButton */ "./src/components/ToggleButton.jsx");
 /* eslint-disable no-shadow */
+
 
 
 
@@ -13310,7 +13324,7 @@ const CategoryMapping = () => {
     isOpen: open,
     setIsOpen: setOpen,
     className: "ctx-w-[1140px] ctx-min-h-60",
-    title: "Attribute Mapping"
+    title: "New Category Mapping"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "ctx-bg-gray-50 ctx-rounded-2xl ctx-px-4 ctx-py-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -13319,7 +13333,7 @@ const CategoryMapping = () => {
     className: "ctx-flex-grow"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "ctx-text-gray-800 ctx-text-base ctx-font-medium ctx-m-1"
-  }, "Mapping Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Input__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, "Mapping Name*"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Input__WEBPACK_IMPORTED_MODULE_3__["default"], {
     size: "small"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "ctx-flex-grow"
@@ -13363,9 +13377,17 @@ const CategoryMapping = () => {
     className: "even:ctx-bg-gray-200 odd:ctx-bg-gray-100"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Table__WEBPACK_IMPORTED_MODULE_5__["default"].Cell, {
     className: "ctx-text-base ctx-font-medium ctx-text-gray-900 ctx-p-3"
-  }, "Clothing"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Table__WEBPACK_IMPORTED_MODULE_5__["default"].Cell, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_SearchSelect__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, "Clothing"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Table__WEBPACK_IMPORTED_MODULE_5__["default"].Cell, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "ctx-flex ctx-gap-2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_SearchSelect__WEBPACK_IMPORTED_MODULE_4__["default"], {
     size: "small"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Table__WEBPACK_IMPORTED_MODULE_5__["default"].Row, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    size: "medium",
+    type: "outline",
+    icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      className: "ctx-size-4"
+    })
+  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Table__WEBPACK_IMPORTED_MODULE_5__["default"].Row, {
     className: "even:ctx-bg-gray-200 odd:ctx-bg-gray-100"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Table__WEBPACK_IMPORTED_MODULE_5__["default"].Cell, {
     className: "ctx-text-base ctx-font-medium ctx-text-gray-900 ctx-p-3"
@@ -13484,9 +13506,9 @@ const AttributeMapping = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "ctx-w-[480px] ctx-mx-auto ctx-mb-4"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Label__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: "ctx-text-center",
+    className: "ctx-text-center ctx-text-base",
     htmlFor: "attribute-name"
-  }, "Attribute Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Input__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, "Attribute Name*"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Input__WEBPACK_IMPORTED_MODULE_3__["default"], {
     id: "attribute-name",
     size: "small"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Table__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -13682,7 +13704,7 @@ const WpOptions = () => {
     className: "ctx-bg-gray-50 ctx-rounded-2xl ctx-px-4 ctx-py-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "ctx-text-gray-800 ctx-text-base ctx-font-medium ctx-m-1"
-  }, "Option Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_SearchSelect__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, "Option Name*"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_SearchSelect__WEBPACK_IMPORTED_MODULE_3__["default"], {
     currentSelected: data[0].selected,
     size: "small"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -14396,7 +14418,7 @@ const StatusDisclosures = () => {
     className: "ctx-bg-white",
     title: "Status Disclosure"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "ctx-space-y-4"
+    className: "ctx-space-y-3"
   }, Object.keys(_data_status__WEBPACK_IMPORTED_MODULE_1__["default"]).map(item => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_StautsDisclosure__WEBPACK_IMPORTED_MODULE_2__["default"], {
     key: item,
     title: item,
@@ -14453,7 +14475,7 @@ const Support = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     className: "ctx-block ctx-text-base ctx-font-medium ctx-text-gray-800 ctx-mb-0.5",
     htmlFor: "name"
-  }, "Your Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Input__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, "Your Name*"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Input__WEBPACK_IMPORTED_MODULE_3__["default"], {
     className: "ctx-bg-white",
     id: "name",
     placeholder: "Your name [required]"
@@ -14462,7 +14484,7 @@ const Support = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     className: "ctx-block ctx-text-base ctx-font-medium ctx-text-gray-800 ctx-mb-0.5",
     htmlFor: "name"
-  }, "Your Email"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Input__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, "Your Email*"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Input__WEBPACK_IMPORTED_MODULE_3__["default"], {
     className: "ctx-bg-white",
     id: "name",
     placeholder: "emailaddress@email.com [required]"
@@ -14471,8 +14493,8 @@ const Support = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     className: "ctx-block ctx-text-base ctx-font-medium ctx-text-gray-800 ctx-mb-0.5",
     htmlFor: "name"
-  }, "Your Message"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("textarea", {
-    rows: 4,
+  }, "Your Message*"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("textarea", {
+    rows: 6,
     className: "ctx-bg-white ctx-block ctx-w-full ctx-shadow-custom-sm-light ctx-font-medium ctx-border !ctx-border-gray-100 !ctx-rounded-lg !ctx-px-2 placeholder:!ctx-text-gray-300  ctx-flex-grow focus:!ctx-border-primary focus-visible:!ctx-outline-none "
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "ctx-mt-4 ctx-flex ctx-justify-end"
@@ -27744,6 +27766,46 @@ function ChevronDownIcon({
   }));
 }
 const ForwardRef = /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(ChevronDownIcon);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ForwardRef);
+
+/***/ }),
+
+/***/ "./node_modules/@heroicons/react/24/outline/esm/ArrowDownIcon.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@heroicons/react/24/outline/esm/ArrowDownIcon.js ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+
+function ArrowDownIcon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    fill: "none",
+    viewBox: "0 0 24 24",
+    strokeWidth: 1.5,
+    stroke: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    d: "M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(ArrowDownIcon);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ForwardRef);
 
 /***/ }),

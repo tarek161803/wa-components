@@ -61,7 +61,7 @@ const AttributeMapping = () => {
 					<div className="ctx-flex ctx-gap-4 ctx-mx-7">
 						<div className="ctx-flex-grow">
 							<Label htmlFor="attribute-name">
-								Attribute Name
+								Attribute Name*
 							</Label>
 							<Input id="attribute-name" size="small" />
 						</div>
