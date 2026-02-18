@@ -1,6 +1,5 @@
-import React from 'react';
 import cn from '../../utils/cn';
-const ComponentContainer = ({ title = '', children, className }) => {
+const ComponentContainer = ({ title = '', children, className = '' }) => {
 	return (
 		<div>
 			<p className="ctx-mb-1 ctx-text-base ctx-font-medium ctx-capitalize ctx-select-none">
